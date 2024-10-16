@@ -671,7 +671,7 @@ video {
 <!-- ============================================================== -->*/
 
 .service-section {
-    padding: 115px 0 90px;
+    padding: 115px  90px;
 }
 
 .single-service-box {
@@ -1855,17 +1855,17 @@ h4.pricing-from {
 <!-- ============================================================== -->*/
 
 .breadcumb-section.d-flex.align-items-center {
-    background: url(../images/resource/breadcumb-bg.png);
+    background: #043E55;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 592px;
+    height: px;
 }
 
 .breadcumb-title h1 {
     font-size: 50px;
-    color: #ffffff;
-    font-weight: 700;
+    color: #043E55;
+    font-weight: 00;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -1876,7 +1876,7 @@ h4.pricing-from {
 
 .breadcumb-container ul li {
     display: inline-block;
-    color: #ffffff;
+    color: #043E55;
 }
 
 .breadcumb-container ul li a {
@@ -2343,13 +2343,13 @@ h4.pricing-from {
 <!-- ============================================================== -->*/
 
 .copyright-section {
-    background: #111b45;
+    background: #ffffff;
     padding: 18px 0;
 }
 
 .copyright-description p {
     font-size: 17px;
-    color: #ffffff;
+    color: #111010;
     font-weight: 400;
     margin: auto;
 }
@@ -2377,7 +2377,7 @@ h4.pricing-from {
 }
 
 .contact-section.style-two {
-    background: #ebeffe;
+    background: #043E55;
 }
 
 .project {
@@ -2531,7 +2531,7 @@ h4.pricing-from {
 }
 
 .service-box:hover .service-content p {
-    color: #01adee;
+    color: #043E55;
 }
 
 .service-box:hover .service-icon i {
