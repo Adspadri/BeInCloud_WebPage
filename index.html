@@ -7,6 +7,9 @@
 	<title>BeInCloud</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
 	<!-- bootstrap CSS -->
@@ -42,6 +45,8 @@
 	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
 
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="assets/js/translate.js"></script>
+
 	
 	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
                 
@@ -70,6 +75,7 @@
 				<input type="search" name="search-field" placeholder="Search Here" required>
 				<button type="submit"><i class="fas fa-search"></i></button>
 			</div>
+			
 		</form>
 	</div>
 	<!--==================================================-->
@@ -89,6 +95,7 @@
 						<a class="logo_img" href="index.html" title="it-solution">
 							<img src="assets/images/resource/Logo BeInCloud blanco.png" alt="logo">
 						</a>
+						
 						<a class="main_sticky" href="index.html" title="it-solution">
 							<img src="assets/images/LogoBIC.png" alt="logo">
 						</a>
@@ -101,6 +108,7 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
+									
 									<!--<li><a href="services.html">Services</a></li>-->
 									<li><a href="services-details.html">Services Details</a></li>
 								</ul>
@@ -111,6 +119,7 @@
 									<li><a href="portfolio-details.html">Portfolio Details</a></li>
 								</ul>
 							</li>-->
+							
 							<li><a href="blog.html">Blog <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
 									<li><a href="blog.html">Blog</a></li>
@@ -134,14 +143,25 @@
 							<li><a href="contact-us.html">Contact Us</a></li>
 							
 						</ul>
-						<!-- headerm search button -->
+						
+						<!-- headerm search button BeInCloud168907-->
 						 
 						<div class="header-button">
 							<div class="header-src-btn">
 								<div class="search-box-btn search-box-outer">
+									
 									<i class="fas fa-search"></i></div>
 							</div>
 						</div>
+						
+						<div class="language-switch">
+							 <button onclick="changeLanguage('en')">English</button>
+						</div>
+						<div class="language-switch">
+							<button onclick="changeLanguage('es')">Español</button>
+						</div>
+
+
 						
 						<!-- headerm light button -->
 						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
@@ -195,8 +215,10 @@
 					
 				</ul>
 			</nav>
+			
 		</div>
 	</div>
+	
 
 	<!--==================================================-->
 	<!-- End it solution Main Menu  -->
@@ -225,9 +247,10 @@
 							<div class="col-lg-7">
 								<div class="hero-content">
 									<h5>IT SOLUTIONS</h5>
-									<h1>We offer innovative tech solutions</h1>
-									<h1>To help your business reach the next <span> Level </span></h1>
-									<p>From web development to cloud consulting, we’re here to optimize your performance and reduce costs </p>
+									<h1 data-translate="solution">We offer innovative tech solutions</h1>
+									<h1 data-translate="business">To help your business reach the next <span data-translate="level"> Level </span></h1>
+									<p data-translate="consulting">From web development to cloud consulting, 
+										we’re here to optimize your performance and reduce costs </p>
 									<!--<div class="hero-button">
 										<div class="section-button">
 											<a href="#">Start Now</a>
@@ -293,7 +316,7 @@
 						<div class="counter-text">
 							<h1 class="counter">100</h1>
 							<span>%</span>
-							<h5>Saticfied Custimer</h5>
+							<h5>Saticfied Customer</h5>
 						</div>
 					</div>
 				</div>
@@ -331,11 +354,9 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h5>History and Values</h5>
+						<h5 data-translate="historyand">History and Values</h5>
 						<h1>About Us</h1>
-						<p>Founded in 2018, BeInCloud was born with the goal of leading technological 
-							innovation. Our mission is to offer customized
-							tech solutions that maximize efficiency and reduce costs.</p>
+						<p data-translate="fundation">Founded in 2018, BeInCloud was born with the goal of leading technological innovation. Our mission is to offer customized tech solutions that maximize efficiency and reduce costs.</p>
 					</div>
 					<div class="row">
 						<div class="col-lg-6">

@@ -1,5 +1,5 @@
 /*===============================================
-Template Name: Dreamhub Life Insurance Company Agency HTML5 Template
+Template Name: Dheaeamhub Life Insurance Company Agency HTML5 Template
 Author:  https://templatemonster.com/authors/dreamit/
 Description: Description
 Version: 1.0.0
@@ -59,7 +59,7 @@ Tags: agency, consulting, digital agency, digital marketing, digital marketing a
     
 }
 
-.sticky {
+.sticky  {
     left: 0;
     margin: auto;
     position: fixed !important;
@@ -123,7 +123,7 @@ nav.it-solution_menu {
     color: #043E55;
 }
 
-nav.it-solution_menu span {
+nav.it-solution_menu span  {
     display: inline-block;
     font-size: 10px;
     font-family: jost;
@@ -156,10 +156,32 @@ span.bi.bi-sun {
     border-radius: 5px;
     text-align: center;
 }
+.language-switch {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.language-switch button {
+    background: none;
+    color: #7c96a0;
+    font-size: 18px;
+    padding: 8px 12px;
+    border:  #faf0f0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.language-switch button:hover {
+    background-color: #a4b5bc; /* Color de fondo al pasar el cursor */
+    color: #ffffff; /* Cambia el color de texto al pasar el cursor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
 
 /*Style Two Nav Menu*/
 
-.style-two.it-solution_nav_manu {
+.style-two.it-solution_nav_manu  {
     border-bottom: 1px solid rgba(255,255,255,0.10196078431372549);
 }
 
