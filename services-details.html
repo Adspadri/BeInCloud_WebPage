@@ -4,9 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>BeInCloud - Service-Details</title>
+	<title>BeInCloud</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
 	<!-- bootstrap CSS -->
@@ -32,25 +35,25 @@
 	<!-- bootstrap icons -->
 	<link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all">
 	<!-- Main Style CSS -->
-	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css" media="all">  
-	<!-- Main Style CSS -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">  
 	<!-- responsive CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 	<!-- modernizr js -->
-	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<!-- dark lite css -->
 	<link rel="stylesheet" href="assets/css/dark-lite.css" type="text/css">
 
 	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
 
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="assets/js/translate.js"></script>
+
+	
 	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
                 
                 
 </head>
 
 <body>
-
 
 	<!-- loder -->
 	<div class="loader-wrapper">
@@ -153,6 +156,15 @@
 							</div>
 							 
 						</div>
+
+						<!--language-switch-->	
+						<div class="language-switch">
+							<button onclick="changeLanguage('en')">English</button>
+					   </div>
+					   <div class="language-switch">
+						   <button onclick="changeLanguage('es')">Español</button>
+					   </div>
+
 						<!-- headerm light button -->
 						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
 					</nav>
@@ -258,22 +270,32 @@
 							<img src="assets/images/resource/Untitled design - 7.png" alt="">
 						</div>
 						<div class="services-details-content">
-							<h2>Celebrating Head Of The Table 2023</h2>
-							<p>We’ll ensure that you focus on the opportunities th maximize competitive inadvanftage and strengthen strategy
-								connsection betsween operastions aj strategy. From office we can hselp you to trcansgform your opera the
-								tions. Chicago’s premier roofing contractor delivering the care and attention your expect from a startup from
-								the resources and experience you expect national brands.</p>
-							<p class="description">When an unknown printer took a galley. of type and scrambled it to make a type specimen book. It has in
-								survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unch
-								anged Lorem ipsum dolor sit amet consec tetur adipis icing elit.</p>
+							<h2>Our Commitment Across All Services</h2>
+							<span class="Guaranteed">Guaranteed Security</span>
+								<p>We are dedicated to protecting our clients' 
+									information with the highest security standards.
+									 Every service we offer incorporates advanced cybersecurity practices 
+									 and data privacy measures to keep your information safe.</p>
+
+							<span class="quality">Quality Assurance</span>
+							<p>We provide a quality assurance guarantee with every service. 
+								If something doesn’t meet the agreed-upon standards, 
+								we’ll work to adjust it until the desired result is achieved. 
+								Our goal is to deliver an experience that exceeds your expectations.</p>
+
+								<span class="support">Continuous Support</span>
+								<p>Our team is available to provide ongoing support and advice. 
+									We understand that needs may evolve over time, 
+									so we’re here to adapt our solutions and address any concerns that 
+									may arise along the way.</p>
 						</div>
 					 </div>
-					 <div class="services-details-content-left">
+					 <div class="services-details-content-left hide-element">
 						<h2>Security Services</h2>
 						<p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia
 							quaed inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 					
-						<div class="author-comment-box">
+						<div class="author-comment-box hide-element">
 							<div class="comment">
 								<p>Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod remaining ssentially
 									unchanged Lorem ipsum dolor sit amet consec tetur.</p>
@@ -307,7 +329,7 @@
 						</div>
 					</div>
 					<div class="row" data-cues="slideInUp" data-duration="2000">
-						<div class="col-lg-12">
+						<div class="col-lg-12 hide-element">
 							<div class="section-title">
 								<h3>Frequently Asked Question</h3>
 								<p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui dolorem ipsum quia quaed
@@ -317,8 +339,9 @@
 					</div>
 					<div class="row" data-cues="slideInUp" data-duration="2000">
 						<div class="col-lg-12">
+							
 							<!-- Start Accordion -->
-							<div class="tab_container">
+							<div class="tab_container hide-element">
 								<div id="tab1" class="tab_content">
 									 <ul class="accordion">
 										<li>
@@ -344,6 +367,7 @@
 									</ul>
 								</div>
 							</div>
+							
 							<!-- End Accordion -->
 						</div>
 					</div>
@@ -354,15 +378,20 @@
 							<h3>Main Services</h3>
 						</div>
 						<div class="widget-sidebar-menu">
-							<ul><li><a href="#">Web Development <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
-							<ul><li><a href="#">Digital Marketing <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
-							<ul><li><a href="#"> SaaS products <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
-							<ul><li><a href="#">Apps Development <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
-							<ul><li><a href="#">Seo Services <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
-							<ul><li><a href="#">Data Analysis <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Cloud Migration and Scalability Solutions <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Process Automation for Operational Efficiency<span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Mobile Application for Fleet and Logistics Tracking <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Web Platform for Online Sales <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Cloud Financial and Inventory Optimization <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Employee Training Streaming Platform <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">AI-Powered Demand Forecasting <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Real-Time Sales Tracking System <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+							<ul><li><a href="#">Quality Assurance Automation <span><i class="bi bi-chevron-right"></i></span></a></li></ul>
+						
 						</div>
 					</div>
-					<div class="widget-sidebar-box-left">
+					<!---->
+					<div class="widget-sidebar-box-left hide-element">
 						<div class="sideber-content">
 							<h4>Download Assets</h4>
 							<p>Lorem ipsum dolor sit amet consectetur
@@ -376,7 +405,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="widget-address-box">
+					<div class="widget-address-box hide-element">
 						<div class="widget-address-content" >
 							<h3>(312) 667-4440</h3>
 							<p>Monday – Friday: 8:00 am -9:00 pm 25/7 Emergency Service</p>
@@ -405,7 +434,7 @@
 
 	<div class="footer-section">
 		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
+			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-logo">
 						 <a href="#"><img src="assets/images/resource/Logo BeInCloud blanco.png" alt="bg"></a>
@@ -445,14 +474,9 @@
 						</div>
 						<div class="icon-box">
 							<div class="widget-icon-box">
-								<div class="widget-icon">
-									<i class="bi bi-telephone"></i>
-								</div>
+								
 							</div>
-							<div class="icon-box-content">
-								<p>For Rental Call</p>
-								<h4>+125 456 456</h4>
-							</div>
+							
 						</div>
 						<div class="icon-box">
 							<div class="widget-icon-box">
@@ -462,44 +486,26 @@
 							</div>
 							<div class="icon-box-content">
 								<p>Send us Email</p>
-								<h4>support@ito.com</h4>
+								<h4>info@beincloud.net</h4>
 							</div>
 						</div>
-						<div class="icon-box">
-							<div class="widget-icon-box">
-								<div class="widget-icon">
-									<i class="bi bi-geo-alt"></i>
-								</div>
-							</div>
-							<div class="icon-box-content">
-								<p>Address</p>
-								<h4>+880 Ulipur.Kurigram</h4>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-widget-content">
-						<div class="footer-widget-title-left">
-							<h3>Photo Gallery</h3>
-						</div>
-						<div class="photo-gallery-img-list">
-							<ul>
-								<li><a href="#"><img src="assets/images/resource/photo-img.png" alt="img"></a></li>
-								<li><a href="#"><img src="assets/images/resource/photo-img1.png" alt="img"></a></li>
-								<li><a href="#"><img src="assets/images/resource/photo-img2.png" alt="img"></a></li>
-								<li><a href="#"><img src="assets/images/resource/photo-img3.png" alt="img"></a></li>
-								<li><a href="#"><img src="assets/images/resource/photo-img4.png" alt="img"></a></li>
-								<li><a href="#"><img src="assets/images/resource/photo-img5.png" alt="img"></a></li>
-							</ul>
-						</div>
+						
+		
+							<div class="footer-logo">
+								<a href="#"><img src="assets/images/resource/Untitled design - 4.png" alt="bg"></a>
+						   </div>
+						
 						 
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<!--==================================================-->
 	<!-- End it solution footer Section  -->
 	<!--==================================================-->
