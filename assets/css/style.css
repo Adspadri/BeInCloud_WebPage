@@ -2231,7 +2231,8 @@ h4.pricing-from {
 
 .footer-section {
     background: #043E55;
-    padding: 100px 0;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .footer-widget-description p {
@@ -2766,7 +2767,7 @@ h4.pricing-from {
 <!-- ================================================ -->*/
 
 .service-details-section {
-    padding: 120px 0 105px;
+    padding: 120px 20px 105px;
 }
 
 .services-details-thumb{
@@ -2790,13 +2791,43 @@ h4.pricing-from {
     margin: 50px 0 22px;
     
 }
-.Guaranteed, .quality, .support {
-    display: block; /* Asegura que cada subtítulo ocupe una línea completa */
+.Guaranteed{
     font-size: 20px;
     color: #0a0a0a;
     font-weight: 600;
     font-family: "Jost";
-    margin: 30px 0 10px; /* Margen inferior para espacio entre subtítulo y párrafo */
+    margin: 30px 0 50px;
+    
+} 
+.quality{
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 30px 0 50px;
+    
+} 
+.support{
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 30px 0 50px;
+
+} 
+ .services-details-cloud {
+    font-size: 17px;
+    line-height: 27px;
+    color: #7a8287;
+    font-weight: 400;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 100px; /* Márgen superior especificado */
+}
+.services-details-cloud {
+    margin-top: 30px; /* Márgen superior especificado */
 }
 
 .services-details-content p {
@@ -2806,6 +2837,7 @@ h4.pricing-from {
     font-weight: 400;
     width: 100%;
     margin: auto;
+    margin-bottom: 20px; 
 }
 
 p.description {
