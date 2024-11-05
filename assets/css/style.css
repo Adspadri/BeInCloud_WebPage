@@ -2815,18 +2815,50 @@ h4.pricing-from {
     margin: 30px 0 50px;
 
 } 
+.services-details-containers {
+    margin-right: 100px; /* Margen derecho del contenedor */
+    display: flex; /* Si quieres que sea flexible y ajustable */
+    text-align: justify;
+}
+.services-details-containers {
+    font-size: 17px;
+    line-height: 27px;
+    color: #7a8287;
+    font-weight: 400;
+    width: 100%; /* Puede permanecer en 100% */
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+}
+
  .services-details-cloud {
     font-size: 17px;
     line-height: 27px;
     color: #7a8287;
     font-weight: 400;
-    width: 95%;
+    width: 100%;
     margin: auto;
+    margin-right: 100px;
     margin-bottom: 20px;
     padding-right: 20px;
     margin-top: 100px; /* Márgen superior especificado */
 }
 .services-details-cloud {
+    margin-top: 30px; /* Márgen superior especificado */
+}
+.services-details-mobile {
+    font-size: 17px;
+    line-height: 27px;
+    color: #7a8287;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 100px; /* Márgen superior especificado */
+}
+.services-details-mobile {
     margin-top: 30px; /* Márgen superior especificado */
 }
 
