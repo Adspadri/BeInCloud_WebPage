@@ -394,13 +394,14 @@ video {
 
 
 .hero-section {
-    background: url(../images/slider/bg.jpg);
+    background: url(../images//bg.jpg);
     background-repeat: no-repeat;
     position:relative;
     background-size: cover;
     height: 1000px;
     z-index: 1;
 }
+
 
 .hero-content h5 {
     display: inline-block;
@@ -542,6 +543,35 @@ video {
     width: 100%;
     transform: scaleX(1);
 }
+.nube-service-img img{
+        border: 2px solid #333; /* Color y grosor del borde */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+.service-details-containers {
+        padding-bottom: 150px; /* Añade espacio debajo de la sección */
+        
+    }
+.service-container-descriptions{
+        background-color: #043c52;
+        color: #fafbfc;
+        opacity: 0.8;
+    }
+    
+
+.section-title-service p {
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: right;
+}
+.section-title-service h1 {
+    display: flex;
+    justify-content: right;
+}
+.info-content-companies h4{
+    color: white;
+
+}
+
 
     /* section-title*/
 /*=======================*/
