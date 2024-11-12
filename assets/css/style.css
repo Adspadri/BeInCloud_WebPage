@@ -581,14 +581,23 @@ video {
 /* Estilos del contenedor principal */
 .mobile-details-box {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
     border-radius: 5px;
-    margin-bottom: 50px;
-    padding: 50px;
+    margin-top: 10px;
     margin-bottom: 100px;
-    margin-top: 100px;
+    padding: 50px;
     position: relative;
     z-index: 1;
+}
+
+.mobile-details-box h5 {
+    font-size: 50px;
+    color: #0d0c0c;
+    font-weight: 500;
+    margin: 0; /* Elimina márgenes adicionales */
+    text-align: center; /* Asegura que el texto esté centrado dentro del h5 */
+    width: 100%; /* Hace que el h5 ocupe el ancho completo del contenedor */
 }
 
 /* Configura el contenedor interno para alinear imagen y texto en fila */
@@ -597,7 +606,7 @@ video {
     align-items: flex-start;
     gap: 0px; /* Espacio entre imagen y texto */
     flex-direction: row; /* Asegura que la imagen esté a la izquierda */
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     margin-top: 90px;
 }
 
@@ -608,7 +617,7 @@ video {
 
 /* Control del tamaño de la imagen */
 .mobile-details-thumb-cel img {
-    width: 500px; /* Ajusta el ancho según sea necesario */
+    width: 200px; /* Ajusta el ancho según sea necesario */
     height: auto;
     border-radius: 5px;
     margin: 0;
@@ -620,10 +629,11 @@ video {
 
 /* Contenido de texto */
 .mobile-details-content-cel {
-    flex: 1; /* Permite que el texto ocupe el resto del espacio */
+    flex: 2; /* Permite que el texto ocupe el resto del espacio */
     padding: 0px;
     margin-left: 0;
 }
+
 
 .mobile-details-title h2 {
     margin: 14px 0 20px;
@@ -646,78 +656,74 @@ video {
 /* service-detales-FinOps */
 /*=======================*/
 /* Estilos del contenedor principal */
+.FinOps-container-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
+    gap: 20px; /* Espacio entre los elementos */
+    background-image: url("../images/finops_finops_hands_hands.png");
+    background-size: cover;
+    padding: 280px;
+}
 .FinOps-details-box {
-    display: flex;
-    align-items: flex-start;
-    border-radius: 5px;
-    margin-bottom: 50px;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    position: relative;
-    z-index: 1;
+    background: rgba(255, 255, 255, 0.85); /* Fondo inicial */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
-/* Configura el contenedor interno para alinear imagen y texto en fila */
-.FinOps-details-box-cel {
-    display: flex;
-    align-items: flex-start;
-    gap: 0px; /* Espacio entre imagen y texto */
-    flex-direction: row; /* Asegura que la imagen esté a la izquierda */
-    margin-bottom: 10px;
-    margin-top: 9px;
+.FinOps-details-box:hover {
+    background: rgba(5, 41, 79, 0.85); /* Color al pasar el mouse (por ejemplo, azul claro) */
+    transform: scale(1.05); /* Añade un ligero efecto de agrandamiento */
+}
+.FinOps-details-box:hover h2,
+.FinOps-details-box:hover p {
+    color: #dbd2d2; /* Cambia el color del texto de h2 y p a negro */
 }
 
-/* Estilos para el contenedor de la imagen */
-.FinOps-details-thumb-cel {
-    flex-shrink: 0; /* Evita que la imagen se redimensione demasiado */
+.FinOps-container-first h2 {
+    grid-column: 1 / span 2; /* Hacer que el título ocupe ambas columnas */
+    text-align: center;
+    color: #fdfafa;
+    margin-bottom: 20px;
 }
 
-/* Control del tamaño de la imagen */
-.FinOps-details-thumb-cel img {
-    width: 500px; /* Ajusta el ancho según sea necesario */
-    height: auto;
-    border-radius: 5px;
+.FinOps-details-box {
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.FinOps-details-content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
     margin: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    transition: .3s; /* Añade una transición suave si deseas efectos al pasar el mouse */
 }
 
-/* Contenido de texto */
-.FinOps-details-content-cel {
-    flex: 1; /* Permite que el texto ocupe el resto del espacio */
-    padding: 0px;
-    margin-left: 0;
+/* Ubicar cada box en una posición específica */
+.box1 {
+    grid-column: 1 / 2; /* Primera columna */
+    grid-row: 1 / 2; /* Primera fila */
 }
 
-.FinOps-details-title{
-    margin: 14px 0 20px;
-    margin-right: 30%;
-    background-image: url("../images/resource/dark-counter-bg.png");/* Con esta nomenclatura es que puedo agregarle el backgorud */
+.box2 {
+    grid-column: 2 / 3; /* Segunda columna */
+    grid-row: 1 / 2; /* Primera fila */
 }
 
-.FinOps-details-title h2 {
-    margin: 14px 0 20px;
-    font-size: 24px;
-    color: #0d0c0c;
-    font-weight: 500;
-    margin-left: 0;
-  
+.box3 {
+    grid-column: 1 / 2; /* Primera columna */
+    grid-row: 2 / 3; /* Segunda fila */
 }
 
-.FinOps-details-title p {
-    font-size: 17px;
-    line-height: 27px;
-    color: #b0b3b6;
-    font-weight: 400;
-    text-align: justify;
-    margin:auto;
-    margin-left: 100;
-   
+.box4 {
+    grid-column: 2 / 3; /* Segunda columna */
+    grid-row: 2 / 3; /* Segunda fila */
 }
-    /* section-title*/
+
 /*=======================*/
 
 .section-title {
