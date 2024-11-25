@@ -436,7 +436,7 @@ video {
     height: 6px;
     width: 6px;
     border-radius: 5px;
-    border: 0.5px solid #ebf4ec;
+    border: 0.5px solid #f0f4f0;
 }
 
 .hero-content h1 {
@@ -549,6 +549,7 @@ video {
     display: flex;
     margin-bottom: 0px;
     justify-content: right;
+    color: rgb(6, 6, 6);
 }
 .section-title-service h1 {
     display: flex;
@@ -558,151 +559,381 @@ video {
     color: white;
 
 }
+.section-title-service h1{
+    display: flex;
+    justify-content: right;
+    color: rgb(16, 16, 16);
+}
 
 
+.section-title-service h5{
+    display: flex;
+    justify-content: right;
+    color: rgb(16, 15, 15);
+}
     /* service-detales-cloud */
 /*=======================*/
-.nube-service-img img{
-    border: 2px solid #333; /* Color y grosor del borde */
-    border-radius: 10px; /* Bordes redondeados */
+.services-details-cloud {
+    font-size: 17px;
+    line-height: 27px;
+    color: #7a8287;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 100px; /* Márgen superior especificado */
 }
+.services-details-cloud {
+    margin-top: 30px; /* Márgen superior especificado */
+}
+
+
 .service-details-containers {
     padding-bottom: 200px; /* Añade espacio debajo de la sección */
     
 }
+.service-details-containers {
+    background-color: #f2f6f9;
+    
+}
 .service-container-descriptions{
-    background-color: #043c52;
+    background-color: #03435c;
     color: #fafbfc;
+    margin-right: 100px;
     opacity: 0.8;
 }
+.cloud-us-section {
+    padding: 0 0 120px;
+    margin-top: 50px;
+}
+
+.cloud-us-section .section-title {
+    margin-bottom: 0px;
+}
+
+.cloud-us-section .section-title h5:after {
+    left: 160px;
+}
+
+.cloud-us-thumb {
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.cloud-us-thumb img {
+    width: 100%;
+    transform: scaleX(1);
+    opacity: 60%;
+}
+.info-content-cloud h4 {
+    font-size: 24px;
+    color: #0d131a;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 0 0 10px;
+    transition: .5s;
+}
+
+.info-item:hover .info-content-cloud h4 {
+    color: #e7eaed;
+}
+.info-content-cloud {
+    background-color: #f9f9f9; /* Fondo normal del contenedor */
+    transition: background-color 0.3s ease;
+}
+
+.info-content-cloud:hover {
+    background-color: #4773a2; /* Fondo al pasar el mouse por el contenedor */
+}
+
+.cloud-us-section p {
+    color: #333; /* Color normal del texto */
+    transition: color 0.3s ease;
+}
+.cloud-us-section p:hover {
+    color: #edf1f5; /* Color al pasar el mouse por el párrafo */
+}
+.cloud-us-section h4 {
+    color: #063162a9; /* Color normal del texto */
+    transition: color 0.3s ease;
+}
+.cloud-us-section h4:hover {
+    color: #edf1f5; /* Color al pasar el mouse por el párrafo */
+}
+
+.info-content-cloud p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #7a8387;
+    font-weight: 400;
+    margin: auto;
+    width: 100%;
+}
+.info-item-cloud {
+    display: flex;
+    margin-bottom: 50px;
+}
+
 
  /* service-detales-mobile */
 /*=======================*/
-/* Estilos del contenedor principal */
-.mobile-details-box {
-    display: flex;
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
+
+/*<!-- mobile service details  */
+
+.mobile-service-section {
+    margin-bottom: 200px;
+
+}
+
+.mobile-section-cell img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    top: 0px; /* Ajusta según sea necesario */
+    left: 0; /* Ajusta según sea necesario */
+    width: 100%; /* Asegura que ocupe el espacio deseado */
+    height: auto; /* Mantiene la proporción */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+    opacity: 0.5; /* Opcional: Cambia la transparencia si lo deseas */
+}
+.mobile-single-items.style_one.style_3 {
+    padding: 30px 35px 40px 25px;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    padding: 50px;
+    margin: 0 12px;
     position: relative;
     z-index: 1;
+    margin-bottom: 200px;
+}
+.mobile-single-items {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #f9f9f96c; /* Color inicial */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
 }
 
-.mobile-details-box h5 {
-    font-size: 50px;
-    color: #0d0c0c;
-    font-weight: 500;
-    margin: 0; /* Elimina márgenes adicionales */
-    text-align: center; /* Asegura que el texto esté centrado dentro del h5 */
-    width: 100%; /* Hace que el h5 ocupe el ancho completo del contenedor */
-}
-
-/* Configura el contenedor interno para alinear imagen y texto en fila */
-.mobile-details-box-cel {
-    display: flex;
-    align-items: flex-start;
-    gap: 0px; /* Espacio entre imagen y texto */
-    flex-direction: row; /* Asegura que la imagen esté a la izquierda */
-    margin-bottom: 10px;
-    margin-top: 90px;
-}
-
-/* Estilos para el contenedor de la imagen */
-.mobile-details-thumb-cel {
-    flex-shrink: 0; /* Evita que la imagen se redimensione demasiado */
-}
-
-/* Control del tamaño de la imagen */
-.mobile-details-thumb-cel img {
-    width: 200px; /* Ajusta el ancho según sea necesario */
-    height: auto;
-    border-radius: 5px;
-    margin: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    transition: .3s; /* Añade una transición suave si deseas efectos al pasar el mouse */
-}
-
-/* Contenido de texto */
-.mobile-details-content-cel {
-    flex: 2; /* Permite que el texto ocupe el resto del espacio */
-    padding: 0px;
-    margin-left: 0;
+.mobile-single-items:hover {
+    transform: translateY(-10px); /* Mueve el elemento hacia arriba */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Acentúa la sombra */
+    background-color: #0d83eb29; /* Cambia ligeramente el color de fondo */
 }
 
 
-.mobile-details-title h2 {
-    margin: 14px 0 20px;
-    font-size: 24px;
-    color: #0d0c0c;
-    font-weight: 500;
-    margin-left: 0;
-  
+.mobile-single-items h3 {
+    font-size: 30px;
+    color: #677f88;
+
 }
 
-.mobile-details-title p {
-    font-size: 17px;
-    line-height: 27px;
-    color: #b0b3b6;
+.section-title-mobile {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.section-title-mobile h1 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #113e64;
+    font-weight: 600;
+}
+
+.mobile-service-body {
+    color: #e4dfdf;
     font-weight: 400;
-    text-align: justify;
-    margin:auto;
-   
+    padding-bottom: 15px;
 }
+
+.mobile-service-body p{
+    font-size: 17px;
+    margin-left: 10px;
+}
+.mobile-service-feature{
+    background-color: #278cc7;
+    opacity: 80%;
+    border-radius: 10%;
+}
+.mobile-service-feature ul {
+    list-style: none;
+}
+.mobile-section-cell {
+    position: relative; /* Hace que el contenedor sea el contexto de posición */
+}
+
+
 /* service-detales-FinOps */
 /*=======================*/
 /* Estilos del contenedor principal */
-.FinOps-container-first {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
-    grid-template-rows: auto auto; /* Ajusta las filas automáticamente */
-    gap: 20px; /* Espacio entre los elementos */
-    background-image: url("../images/finops_finops_hands_hands.png");
-    background-size: cover;
-    padding: 280px;
-}
-.FinOps-details-box {
-    background: rgba(255, 255, 255, 0.85); /* Fondo inicial */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+.FinOps-service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea ambos elementos al inicio verticalmente */
+    gap: 200px; /* Espaciado entre columnas */
+    margin-left: 100px;
+    margin-top: 50px;
 }
 
-.FinOps-details-box:hover {
-    background: rgba(5, 41, 79, 0.85); /* Color al pasar el mouse (por ejemplo, azul claro) */
-    transform: scale(1.05); /* Añade un ligero efecto de agrandamiento */
-}
-.FinOps-details-box:hover h2,
-.FinOps-details-box:hover p {
-    color: #dbd2d2; /* Cambia el color del texto de h2 y p a negro */
+.FinOps-col {
+    flex: 1; /* Toma todo el espacio disponible excepto el ocupado por la imagen */
 }
 
-.FinOps-container-first h2 {
-    grid-column: 1 / span 2; /* Hacer que el título ocupe ambas columnas */
-    text-align: center;
-    color: #fdfafa;
-    margin-bottom: 20px;
+.FinOps-col h2 {
+   margin-bottom: 50px;
+   color: #082b6cb1;
+   font-size: 48px;
 }
 
-.FinOps-details-box {
-    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+.FinOps-us-thumb {
+    flex: 0 0 40%; /* La imagen ocupa el 40% del ancho del contenedor */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.FinOps-us-thumb img {
+    max-width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 8px; /* Opcional: esquinas redondeadas */
+    margin-right: 200px;
+    margin-bottom: 100px;
+    opacity: 75%;
 }
 
 .FinOps-details-content p {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 16px; /* Espaciado entre párrafos */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea */
+    background-color: #cdd1d539;
+    color: #332a2a5d;
+}
+/* General: Añadimos una transición para suavizar los cambios */
+.FinOps-details-content p,
+.FinOps-us-thumb img {
+    transition: all 0.3s ease-in-out;
 }
 
+/* Efecto hover en los párrafos */
+.FinOps-details-content p:hover {
+    background-color: #58a7e0; /* Fondo cambia a un azul sólido */
+    color: #fff; /* Texto cambia a blanco */
+    transform: translateX(10px); /* Se mueve ligeramente a la derecha */
+    box-shadow: 0 4px 15px rgba(88, 167, 224, 0.4); /* Sombra sutil */
+}
+
+/* Efecto hover en la imagen */
+.FinOps-us-thumb img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Añade una sombra */
+    filter: brightness(1.2); /* Hace la imagen más brillante */
+}
+
+/* Efecto hover para el título */
+.FinOps-col {
+    position: relative; /* Define el contenedor como relativo */
+    padding-bottom: 80px; /* Espacio inferior para que el botón no se solape con el contenido */
+}
+
+.more-service-btn {
+    position: absolute; /* Posiciona el botón dentro del contenedor */
+    bottom: 10px; /* Ajusta el botón al fondo */
+    right: 10px; /* Pega el botón al lado derecho */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #033d67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.more-service-btn:hover {
+    background-color: #0066cc;
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.4); /* Añade sombra */
+}
+
+/* service-detales-digitalization */
+/*=======================*/
+/* Estilos del contenedor principal */
+.digitalization-service-section {
+    margin-bottom: 200px;
+
+}
+
+.digitalization-section-cell img {
+    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
+    top: 0px; /* Ajusta según sea necesario */
+    left: 0; /* Ajusta según sea necesario */
+    width: 100%; /* Asegura que ocupe el espacio deseado */
+    height: auto; /* Mantiene la proporción */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+    opacity: 0.5; /* Opcional: Cambia la transparencia si lo deseas */
+}
+.digitalization-single-items.style_one.style_3 {
+    padding: 30px 35px 40px 25px;
+    border-radius: 5px;
+    margin: 0 12px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+.digitalization-single-items {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #f9f9f96c; /* Color inicial */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+}
+
+.digitalization-single-items:hover {
+    transform: translateY(-10px); /* Mueve el elemento hacia arriba */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Acentúa la sombra */
+    background-color: #0d83eb29; /* Cambia ligeramente el color de fondo */
+}
+
+
+.digitalization-single-items h3 {
+    font-size: 30px;
+    color: #677f88;
+
+}
+
+.section-title-digitalization {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.section-title-digitalization h1 {
+    margin-top: 50px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #113e64;
+    font-weight: 600;
+}
+
+.digitalization-service-body {
+    color: #e4dfdf;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.digitalization-service-body p{
+    font-size: 17px;
+    margin-left: 10px;
+}
+.digitalization-service-feature{
+    background-color: #278cc7;
+    opacity: 80%;
+    border-radius: 10%;
+}
+.digitalization-service-feature ul {
+    list-style: none;
+}
+.digitalization-section-cell {
+    position: relative; /* Hace que el contenedor sea el contexto de posición */
+}
 /* Ubicar cada box en una posición específica */
 .box1 {
     grid-column: 1 / 2; /* Primera columna */
@@ -775,7 +1006,7 @@ h5::after {
     margin: 0;
     font-size: 48px;
     line-height: 60px;
-    color: #0a0a0a;
+    color: #083d5a9b;
     font-weight: 600;
 }
 
@@ -2113,64 +2344,6 @@ h4.pricing-from {
 <!-- ============================================================== -->*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*<!-- ============================================================== -->
 <!-- Start it solution blog Section  -->
 <!-- ============================================================== -->*/
@@ -2189,7 +2362,7 @@ h4.pricing-from {
 
 .blog-button a {
     display: inline-block;
-    background: #043E555;
+    background-color:rgb(250, 249, 249);
     padding: 15px 35px;
     border-radius: 2px;
     transition: .5s;
@@ -2998,6 +3171,7 @@ h4.pricing-from {
 } 
 .services-details-containers {
     margin-right: 100px; /* Margen derecho del contenedor */
+    flex-direction: row-reverse;
     display: flex; /* Si quieres que sea flexible y ajustable */
     text-align: justify;
 }
@@ -3006,75 +3180,53 @@ h4.pricing-from {
     line-height: 27px;
     color: #7a8287;
     font-weight: 400;
+    flex-direction: row-reverse;
     width: 100%; /* Puede permanecer en 100% */
     margin: auto;
     margin-bottom: 20px;
     padding-right: 20px;
     margin-top: 100px;
 }
+    .services-details-content p {
+        font-size: 17px;
+        line-height: 27px;
+        color: #7a8287;
+        font-weight: 400;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px; 
+    }
+    
+    p.description {
+        padding-top: 25px;
+    }
+    
+    .services-details-content-left {
+        margin-bottom: 25px;
+    }
+    
+    .services-details-content-left h2 {
+        font-size: 30px;
+        color: #0a0a0a;
+        font-weight: 600;
+        margin: 52px 0 18px;
+    }
+    
+    .services-details-content-left p {
+        font-size: 17px;
+        line-height: 27px;
+        color: #7a8287;
+        font-weight: 400;
+        margin: auto;
+    }
 
- .services-details-cloud {
-    font-size: 17px;
-    line-height: 27px;
-    color: #7a8287;
-    font-weight: 400;
-    width: 100%;
-    margin: auto;
-    margin-right: 100px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    margin-top: 100px; /* Márgen superior especificado */
-}
-.services-details-cloud {
-    margin-top: 30px; /* Márgen superior especificado */
-}
-.services-details-mobile {
-    font-size: 17px;
-    line-height: 27px;
-    color: #7a8287;
-    font-weight: 400;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    margin-top: 100px; /* Márgen superior especificado */
-}
-.services-details-mobile {
-    margin-top: 30px; /* Márgen superior especificado */
-}
 
-.services-details-content p {
-    font-size: 17px;
-    line-height: 27px;
-    color: #7a8287;
-    font-weight: 400;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px; 
-}
 
-p.description {
-    padding-top: 25px;
-}
 
-.services-details-content-left {
-    margin-bottom: 25px;
-}
+ 
 
-.services-details-content-left h2 {
-    font-size: 30px;
-    color: #0a0a0a;
-    font-weight: 600;
-    margin: 52px 0 18px;
-}
 
-.services-details-content-left p {
-    font-size: 17px;
-    line-height: 27px;
-    color: #7a8287;
-    font-weight: 400;
-    margin: auto;
-}
+
 
 .author-comment-box {
     background: #f5f5f5;
