@@ -564,8 +564,9 @@ video {
     justify-content: right;
     color: rgb(16, 16, 16);
 }
-
-
+.section-title h5 {
+color: #404245b2;
+}
 .section-title-service h5{
     display: flex;
     justify-content: right;
@@ -576,7 +577,7 @@ video {
 .services-details-cloud {
     font-size: 17px;
     line-height: 27px;
-    color: #7a8287;
+    color: #fcfeff;
     font-weight: 400;
     width: 100%;
     margin: auto;
@@ -605,6 +606,7 @@ video {
     opacity: 0.8;
 }
 .cloud-us-section {
+    background-color: #0086bb;
     padding: 0 0 120px;
     margin-top: 50px;
 }
@@ -640,33 +642,33 @@ video {
     color: #e7eaed;
 }
 .info-content-cloud {
-    background-color: #f9f9f9; /* Fondo normal del contenedor */
+    background-color: #045172fb; /* Fondo normal del contenedor */
     transition: background-color 0.3s ease;
 }
 
 .info-content-cloud:hover {
-    background-color: #4773a2; /* Fondo al pasar el mouse por el contenedor */
+    background-color: #0ae1fd; /* Fondo al pasar el mouse por el contenedor */
 }
 
 .cloud-us-section p {
-    color: #333; /* Color normal del texto */
+    color: #333333; /* Color normal del texto */
     transition: color 0.3s ease;
 }
 .cloud-us-section p:hover {
-    color: #edf1f5; /* Color al pasar el mouse por el párrafo */
+    color: #000c18; /* Color al pasar el mouse por el párrafo */
 }
 .cloud-us-section h4 {
-    color: #063162a9; /* Color normal del texto */
+    color: #e2e7ede4; /* Color normal del texto */
     transition: color 0.3s ease;
 }
 .cloud-us-section h4:hover {
-    color: #edf1f5; /* Color al pasar el mouse por el párrafo */
+    color: #001327; /* Color al pasar el mouse por el párrafo */
 }
 
 .info-content-cloud p {
     font-size: 18px;
     line-height: 27px;
-    color: #7a8387;
+    color: #dffdff;
     font-weight: 400;
     margin: auto;
     width: 100%;
@@ -684,9 +686,7 @@ video {
 
 .mobile-service-section {
     margin-bottom: 200px;
-
 }
-
 .mobile-section-cell img {
     position: absolute; /* Permite posicionar la imagen dentro del contenedor */
     top: 0px; /* Ajusta según sea necesario */
@@ -706,29 +706,26 @@ video {
 }
 .mobile-single-items {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    background-color: #f9f9f96c; /* Color inicial */
+    background-color: #f2e9e954; /* Color inicial */
     border-radius: 10px; /* Bordes redondeados opcionales */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
 }
 
 .mobile-single-items:hover {
+    
     transform: translateY(-10px); /* Mueve el elemento hacia arriba */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Acentúa la sombra */
-    background-color: #0d83eb29; /* Cambia ligeramente el color de fondo */
+    background-color: #0a3866; /* Cambia ligeramente el color de fondo */
 }
-
-
 .mobile-single-items h3 {
     font-size: 30px;
-    color: #677f88;
-
+    color: #d7e9ed;
 }
 
 .section-title-mobile {
     margin-top: 30px;
     margin-bottom: 100px;
 }
-
 .section-title-mobile h1 {
     margin-top: 50px;
     font-size: 48px;
@@ -736,13 +733,17 @@ video {
     color: #113e64;
     font-weight: 600;
 }
-
 .mobile-service-body {
-    color: #e4dfdf;
+    color: #022f5c;
     font-weight: 400;
     padding-bottom: 15px;
 }
-
+.mobile-service-body :hover{
+    color: #e4dfdf;
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
 .mobile-service-body p{
     font-size: 17px;
     margin-left: 10px;
@@ -752,13 +753,17 @@ video {
     opacity: 80%;
     border-radius: 10%;
 }
+.mobile-service-feature:hover{
+    background-color: #02293f;
+    opacity: 80%;
+    border-radius: 10%;
+}
 .mobile-service-feature ul {
     list-style: none;
 }
 .mobile-section-cell {
     position: relative; /* Hace que el contenedor sea el contexto de posición */
 }
-
 
 /* service-detales-FinOps */
 /*=======================*/
@@ -771,23 +776,19 @@ video {
     margin-left: 100px;
     margin-top: 50px;
 }
-
 .FinOps-col {
     flex: 1; /* Toma todo el espacio disponible excepto el ocupado por la imagen */
 }
-
 .FinOps-col h2 {
    margin-bottom: 50px;
    color: #082b6cb1;
    font-size: 48px;
 }
-
 .FinOps-us-thumb {
     flex: 0 0 40%; /* La imagen ocupa el 40% del ancho del contenedor */
     display: flex;
     justify-content: center; /* Centra la imagen horizontalmente */
 }
-
 .FinOps-us-thumb img {
     max-width: 100%; /* Ajusta la imagen al contenedor */
     height: auto; /* Mantén la proporción de la imagen */
@@ -796,7 +797,6 @@ video {
     margin-bottom: 100px;
     opacity: 75%;
 }
-
 .FinOps-details-content p {
     text-align: left; /* Alinea el texto a la izquierda */
     margin-bottom: 16px; /* Espaciado entre párrafos */
@@ -832,6 +832,423 @@ video {
     padding-bottom: 80px; /* Espacio inferior para que el botón no se solape con el contenido */
 }
 
+/* Start Service Digitalization */
+/* Asegura que la sección ocupe toda la pantalla */
+.digitalization-us-section {
+    position: relative; /* Para colocar el contenido encima del video */
+    width: 100%; /* Toma todo el ancho */
+    height: 100vh; /* Toma toda la altura visible del navegador */
+    overflow: hidden; /* Oculta cualquier contenido que exceda los límites */
+}
+
+/* Estilo para el video de fondo */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala el video para llenar el contenedor sin deformarlo */
+    opacity: 0.8; /* Ajusta la opacidad del video */
+    z-index: -1; /* Coloca el video detrás del contenido */
+    transition: opacity 0.3s ease; /* Agrega transición suave al cambiar la opacidad */
+}
+
+.background-video:hover {
+    opacity: 0.3; /* Incrementa la opacidad al pasar el mouse */
+}
+
+/* Contenedor de texto con efecto */
+.services-details-containers-digitalization {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(16, 87, 239, 0.139); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgb(249, 248, 248); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-details-containers-digitalization:hover {
+    background-color: rgb(90, 150, 241); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+
+/* Títulos y textos */
+.services-details-digitalization h1 {
+    color: #eff2f5a9;
+    margin-bottom: 20px;
+}
+.services-details-digitalization h1:hover {
+    color: #03101e5c;
+
+}
+
+
+/* Párrafos con efecto */
+.services-details-digitalization p {
+    color: #f1efef;
+    text-align: left;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 27px;
+    opacity: 0.7;
+    transition: color 0.3s ease; /* Transición para el cambio de color */
+}
+
+.services-details-digitalization p:hover {
+    color: #252525; /* Cambia el color del texto al pasar el mouse */
+}
+/* Ends Service Digitalization */
+/*
+<!-- ============================================================== -->
+<!-- WEB PLATFORM DEVELOPMENT Service Section  -->
+<!-- ============================================================== -->*/
+.web-us-section {
+   margin-right: 200px;
+    padding: 50px 0 82px;
+}
+.web-us-section .web-section-title {
+    margin-bottom: 52px;
+}
+.web-text {
+    background-color: rgb(84, 209, 223); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgb(162, 141, 141); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 46px;
+}
+.web-text:hover {
+    background-color: rgba(4, 232, 248, 0.265); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+/* Efectos dinámicos en títulos */
+.web-text h1 {
+    color: #edf2f5; /* Color inicial */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.web-text h1:hover {
+    color: #0056b3; /* Cambia al color azul */
+    transform: scale(1.1); /* Agranda ligeramente */
+}
+
+/* Estilos de párrafos */
+.web-text p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #7a8387;
+    font-weight: 400;
+    margin-top: 15px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+.web-text h4 {
+    font-size: 28px;
+    line-height: 27px;
+   color: #01101e;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.web-text p:hover {
+    color: #02477873; /* Oscurece el texto */
+    letter-spacing: 0.5px; /* Espaciado dinámico */
+}
+
+.web-us-button {
+    padding-top: 20px;
+}
+.web-us-thumb img {
+    width: 100%;
+}
+.dark-web-us-button.d-none img {
+    width: 100%;
+}
+/* Ends Service WEB PLATAFORM DEVELOPMENT */
+
+
+/* Start- service-AUGMENTED REALITY */
+/*=======================*/
+/* Estilos del contenedor principal */
+.aumented-reality-service-content {
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos no sobresalgan */
+    color: #152846; /* Color del texto */
+}
+.aumented-reality-image {
+    position: absolute; /* Permite posicionar la imagen detrás */
+    top: 0;
+    left: 0;
+    width: 50%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 100%; /* La imagen cubrirá todo el alto del contenedor */
+    z-index: 0; /* Coloca la imagen detrás del contenido */
+    opacity: 0.5; /* Ajusta la transparencia para un efecto sutil */
+}
+.aumented-reality-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala la imagen para cubrir todo el espacio manteniendo proporción */
+}
+.aumented-reality-col {
+    position: relative; /* El contenido debe estar encima de la imagen */
+    z-index: 1; /* Coloca el contenido por encima de la imagen */
+    padding: 20px; /* Añade algo de espacio interno para el texto */
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.aumented-reality-details-content p {
+    margin-bottom: 16px;
+    margin-left: 20%;
+    margin-right: 10%;
+    font-size: 20px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+    color: #fbf6f6; /* Texto en blanco */
+}
+.aumented-reality-details-content p:hover {
+    background-color: rgba(3, 40, 54, 0.482); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+
+/* Efectos dinámicos en títulos */
+.aumented-reality-col h2 {
+    margin-left: 20%;
+    margin-bottom: 5%;
+    color: #06527183; /* Color inicial */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.aumented-reality-col h2:hover {
+    color: #0d71dd; /* Cambia al color azul */
+    transform: scale(1); /* Agranda ligeramente */
+}
+/* Ends Service aumented-reality */
+
+
+/* Start Service Training Plataforms */
+
+.training-us-section {
+    background-color: #789bf6;
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 10%;
+    padding-bottom: 40%;
+    height: 10vh; /* Sección ocupa toda la altura del viewport */
+    background-image: url(../images/resource/learning\ Kids.webp); /* Ruta de la imagen */
+    
+    ; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    overflow: hidden; /* Evita desbordamientos */
+    z-index: 0;
+}
+.training-container {
+    position: relative;
+    z-index: 1; /* Contenido encima de la imagen */
+    color: #1bd3c4a4; /* Asegura que el texto sea visible sobre la imagen */
+    padding: 10px; /* Agrega un espacio alrededor del contenido */
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.training-text,
+.training-performance-text,
+.training-culture-text {
+    background-color: rgba(254, 253, 253, 0.751); /* Fondo semitransparente para el texto */
+    padding: 1px;
+    border-radius: 8px; /* Bordes redondeados para un diseño más limpio */
+    margin-bottom: 20px; /* Espaciado entre secciones */
+}
+.training-text h4,
+.training-performance-text h4,
+.training-culture-text h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #716e6eca;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+.training-text h4:hover {
+    background-color: rgba(5, 22, 29, 0.372); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(251, 250, 250); /* Aumenta ligeramente la sombra */
+}
+.training-culture-text h4:hover {
+    background-color: rgb(5, 22, 29, 0.372); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(251, 250, 250); /* Aumenta ligeramente la sombra */
+}
+.training-performance-text h4:hover {
+    background-color: rgb(5, 22, 29, 0.372); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(251, 250, 250); /* Aumenta ligeramente la sombra */
+}
+.training-text p,
+.training-performance-text p,
+.training-culture-text p {
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.3;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+.training-text p:hover {
+    background-color: rgba(237, 148, 123, 0.712); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+.training-culture-text p:hover {
+    background-color: rgba(237, 148, 123, 0.712); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+.training-performance-text p:hover {
+    background-color: rgba(237, 148, 123, 0.712); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+/* Ends Service Training Plataforms */
+
+/* Start Service Artificial Intelligence (AI) */
+
+.artificial-intelligence-service-content {
+
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos no sobresalgan */
+    color: #152846; /* Color del texto */
+    background-color: #3a757d;
+}
+.artificial-intelligence-image {
+    position: absolute; /* Permite posicionar la imagen detrás */
+    top: 0;
+    left: 0;
+    width: 80%; /* La imagen ocupará todo el ancho del contenedor */
+    height: 100%; /* La imagen cubrirá todo el alto del contenedor */
+    z-index: 0; /* Coloca la imagen detrás del contenido */
+    opacity: 0.8; /* Ajusta la transparencia para un efecto sutil */
+}
+.artificial-intelligence-image img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60%;
+    height: 70%;
+    /* Escala la imagen para cubrir todo el espacio manteniendo proporción */
+}
+.artificial-intelligence-col {
+    position: relative; /* El contenido debe estar encima de la imagen */
+    z-index: 1; /* Coloca el contenido por encima de la imagen */
+    padding: 0px; /* Añade algo de espacio interno para el texto */
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+.artificial-intelligence-details-content p {
+    margin-bottom: 16px;
+    margin-left: 20%;
+    margin-right: 10%;
+    font-size: 25px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+    color: #fbf6f6; /* Texto en blanco */
+}
+.artificial-intelligence-details-content p:hover {
+    background-color: rgba(3, 40, 54, 0.482); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+
+/* Efectos dinámicos en títulos */
+.artificial-intelligence-col h2 {
+    margin-left: 20%;
+    font-size: 45px;
+    margin-bottom: 5%;
+    color: #75cdf0; /* Color inicial */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.artificial-intelligence-col h2:hover {
+    color: #01305f; /* Cambia al color azul */
+    transform: scale(1); /* Agranda ligeramente */
+}
+
+/* Ends Service Artificial Intelligence (AI) */
+
+/* Start Service Automations */
+
+.automations-us-section {
+    background-color: #044675;
+    padding: 50px 0 82px;
+}
+.automations-us-section .automations-section-title {
+    margin-bottom: 52px;
+}
+.automations-text {
+    background-color: rgba(23, 169, 55, 0.649); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgb(162, 141, 141); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 46px;
+}
+.automations-text:hover {
+    background-color: rgba(4, 0, 0, 0.482); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+}
+/* Efectos dinámicos en títulos */
+.automations-text h1, .web-text h4 {
+    color: #ffffff; /* Color inicial */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.automations-text h1:hover, .web-text h4:hover {
+    color: #d4e3f3; /* Cambia al color */
+    transform: scale(1.); /* Agranda ligeramente */
+}
+
+/* Estilos de párrafos */
+.automations-text p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #e4e8ea66;
+    font-weight: 400;
+    margin-top: 15px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+.automations-text h4 {
+    font-size: 25px;
+    line-height: 27px;
+    color: #e4e8ea66;
+    font-weight: 500;
+    padding-top: 10px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+.automations-text p:hover {
+    color: #e7ebefbd; /* Oscurece el texto */
+    letter-spacing: 0.5px; /* Espaciado dinámico */
+}
+.automations-text h4:hover {
+    color: #e7ebefbd; /* Oscurece el texto */
+    letter-spacing: 0.5px; /* Espaciado dinámico */
+}
+.automations-us-button {
+    padding-top: 20px;
+}
+.automations-us-thumb img {
+    width: 100%;
+}
+.dark-automations-us-button.d-none img {
+    width: 100%;
+}
+
+/* Ends Service Automations */
+
+.more-service-btn {
+    position: relative;
+    z-index: 2; /* Asegura que el botón esté visible encima del fondo */
+    text-decoration: none;
+    color: #fff;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.more-service-btn:hover {
+    background-color: #0056b3;
+}
 .more-service-btn {
     position: absolute; /* Posiciona el botón dentro del contenedor */
     bottom: 10px; /* Ajusta el botón al fondo */
@@ -859,109 +1276,12 @@ video {
 /*=======================*/
 /* Estilos del contenedor principal */
 
-.digitalization-service-section {
-    margin-bottom: 200px;
-
-}
-
-.digitalization-section-cell img {
-    position: absolute; /* Permite posicionar la imagen dentro del contenedor */
-    top: 0px; /* Ajusta según sea necesario */
-    left: 0; /* Ajusta según sea necesario */
-    width: 100%; /* Asegura que ocupe el espacio deseado */
-    height: auto; /* Mantiene la proporción */
-    z-index: -1; /* Coloca la imagen detrás del contenido */
-    opacity: 0.5; /* Opcional: Cambia la transparencia si lo deseas */
-}
-.digitalization-single-items.style_one.style_3 {
-    padding: 30px 35px 40px 25px;
-    border-radius: 5px;
-    margin: 0 12px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 200px;
-}
-.digitalization-single-items {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    background-color: #f9f9f96c; /* Color inicial */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-}
-
-.digitalization-single-items:hover {
-    transform: translateY(-10px); /* Mueve el elemento hacia arriba */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Acentúa la sombra */
-    background-color: #0d83eb29; /* Cambia ligeramente el color de fondo */
-}
-
-
-.digitalization-single-items h3 {
-    font-size: 30px;
-    color: #677f88;
-
-}
-
-.section-title-digitalization {
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-.section-title-digitalization h1 {
-    margin-top: 50px;
-    font-size: 48px;
-    line-height: 60px;
-    color: #113e64;
-    font-weight: 600;
-}
-
-.digitalization-service-body {
-    color: #e4dfdf;
-    font-weight: 400;
-    padding-bottom: 15px;
-}
-
-.digitalization-service-body p{
-    font-size: 17px;
-    margin-left: 10px;
-}
-.digitalization-service-feature{
-    background-color: #278cc7;
-    opacity: 80%;
-    border-radius: 10%;
-}
-.digitalization-service-feature ul {
-    list-style: none;
-}
-.digitalization-section-cell {
-    position: relative; /* Hace que el contenedor sea el contexto de posición */
-}
-/* Ubicar cada box en una posición específica */
-.box1 {
-    grid-column: 1 / 2; /* Primera columna */
-    grid-row: 1 / 2; /* Primera fila */
-}
-
-.box2 {
-    grid-column: 2 / 3; /* Segunda columna */
-    grid-row: 1 / 2; /* Primera fila */
-}
-
-.box3 {
-    grid-column: 1 / 2; /* Primera columna */
-    grid-row: 2 / 3; /* Segunda fila */
-}
-
-.box4 {
-    grid-column: 2 / 3; /* Segunda columna */
-    grid-row: 2 / 3; /* Segunda fila */
-}
 
 /*=======================*/
 
 .section-title {
     margin-bottom: 58px;
 }
-
 .section-title h5:before{
     margin: 0 0 14px;
     font-size: 16px;
@@ -971,7 +1291,6 @@ video {
     z-index: 1;
     padding-left: 17px;
 }
-
 .section-title h5:before {
     position: absolute;
     content: "";
@@ -989,8 +1308,6 @@ h5::after {
     content: none;
     display: none;
 }
-
-
 .section-title h5:after {
     position: absolute;
     content: "";
@@ -1007,10 +1324,13 @@ h5::after {
     margin: 0;
     font-size: 48px;
     line-height: 60px;
-    color: #083d5a9b;
+    color: #6f7a7af9;
     font-weight: 600;
 }
 
+.section-title h1:hover {
+    color: #fbf4f2; /* Cambia este valor por el color deseado */
+}
 .section-title h1 span {
     color: #09aff3;
 }
@@ -1086,10 +1406,14 @@ h5::after {
 .section-title p {
     font-size: 18px;
     line-height: 27px;
-    color: #7a8387;
+    color: #33383ac0;
     font-weight: 400;
     font-family: "Jost";
     margin-top: 22px;
+}
+
+.section-title p:hover {
+    color: #f5f7f6; /* Cambia este valor por el color deseado */
 }
 
 .section-title h2 {
@@ -1099,13 +1423,6 @@ h5::after {
     font-family: "Jost";
 }
 
-/*
-<!-- ============================================================== -->
-<!-- End it solution Hero Section  -->
-<!-- ============================================================== -->*/
-
-
-
 
 /*<!-- ============================================================== -->
 <!-- Start it solution service Section  -->
@@ -1113,6 +1430,11 @@ h5::after {
 
 .service-section {
     padding: 115px  90px;
+}
+
+.container-w {
+background-color: #003d56;
+padding: 15px;
 }
 
 .single-service-box {
@@ -1218,11 +1540,13 @@ h5::after {
 <!-- ============================================================== -->*/
 
 .choose-us-section {
-    padding: 0 0 120px;
+    padding: 50px;
+    padding-bottom: 15px;
+    background-color: #003d56;
 }
 
 .choose-us-section .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .choose-us-section .section-title h5:after {
@@ -1279,7 +1603,7 @@ h5::after {
 
 .info-content h4 {
     font-size: 24px;
-    color: #0a0a0a;
+    color: #fcfbfb5b;
     font-weight: 600;
     font-family: "Jost";
     margin: 0 0 10px;
@@ -1287,7 +1611,7 @@ h5::after {
 }
 
 .info-item:hover .info-content h4 {
-    color: #043E55;
+    color: #fafafa;
 }
 
 .info-content p {
@@ -1298,7 +1622,9 @@ h5::after {
     margin: auto;
     width: 100%;
 }
-
+.info-content p:hover{
+    color: #eceff1;
+}
 .choose-us-button {
     padding-top: 10px;
 }
@@ -1309,7 +1635,7 @@ h5::after {
     color: #ffffff;
     font-weight: 500;
     font-family: "Jost";
-    background: #043E55;
+    background: #6f8e9b;
     padding: 15px 35px;
     border-radius: 5px;
     transition: .5s;
@@ -1670,6 +1996,7 @@ h5::after {
 
 .about-us-section {
     padding: 115px 0 112px;
+    background-color: #8bbbc072;
 }
 
 .about-us-section .section-title h5:after {
@@ -1714,14 +2041,22 @@ h5::after {
     display: flex;
     font-size: 18px;
     line-height: 27px;
-    color: #7a8387;
+    color: #b7c9d1;
     font-weight: 400;
     margin-top: 15px;
 }
+.about-text p:hover{
+    color: #033d17;
+}
 .about-text-text p {
+    color: #36393b;
     width: 100%;
     margin: 1;
     text-align: justify;
+}
+.about-text-text p:hover{
+    color: #fdfdfd;
+    background-color: #021b36a3;
 }
 .about-us-button {
     padding-top: 20px;
@@ -1792,11 +2127,43 @@ h5::after {
 
 .about-us-thumb img {
     width: 100%;
+    border-radius: 50px;
 }
 
 .dark-about-us-button.d-none img {
     width: 100%;
 }
+
+.about-us-section-solution {
+    background-color: #d9f5ff;
+     
+}
+
+.section-title-aboutus h1{
+    color: rgba(20, 20, 92, 0.487);
+}
+.section-title-aboutus h1:hover{
+    color: rgba(20, 92, 80, 0.487);
+    background-color: #5ca9f754;
+}
+.section-title-aboutus h4{
+    color: rgba(20, 20, 92, 0.173);
+}
+.section-title-aboutus h4:hover{
+    color: rgb(20, 92, 80);
+    background-color: #5ca9f754;
+}
+.section-title-aboutus p{
+    margin-top: 20px;
+    color: rgba(0, 106, 155, 0.954);
+    font-size: 20px
+}
+
+.section-title-aboutus p:hover{
+    color: rgb(20, 48, 92);
+    background-color: #01afee5b;
+}
+
 
 /*<!-- ============================================================== -->
 <!-- End it solution About Us Section  -->
@@ -1806,6 +2173,46 @@ h5::after {
 
 
 
+/*<!-- ============================================================== -->
+<!-- Start it solution brand Section  -->
+<!-- ============================================================== -->*/
+
+.mobile-carrucel-brand-section {
+    background: #00678ff5;
+    padding: 70px 0 80px;
+}
+
+.mobile-carrucel-brand-section .section-title {
+    margin-bottom: 62px;
+}
+
+.brand-thumb {
+    display: inline-block;
+    background: #1C254C;
+    transition: .5s;
+    border-radius: 5px;
+    height: 135px;
+    line-height: 135px;
+    width: 232px;
+}
+
+.brand-thumb:hover {
+    background: #fff;
+} 
+
+.brand-thumb img {
+    filter: brightness(0) invert(1);
+    transition: .5s;
+    margin: 40px auto 0;
+}
+
+.brand-thumb:hover img {
+    filter: inherit;
+}
+
+/*<!-- ============================================================== -->
+<!-- End it solution brand Section  -->
+<!-- ============================================================== -->*/
 
 /*<!-- ============================================================== -->
 <!-- Start it solution brand Section  -->
@@ -2583,11 +2990,20 @@ h4.pricing-from {
  <!-- Start it solution footer Section  -->
 <!-- ============================================================== -->*/
 
+.footer-section .row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten a la siguiente fila si es necesario */
+    justify-content: space-between;
+}
+.footer-section img {
+
+    width: 50%;
+}
+
 .footer-section {
     background: #043E55;
-    padding: 20px 0px;
-    width: 100%;
-    height: 1000%;
+    padding-top: 2%;
+   
 }
 
 .footer-widget-description p {
@@ -2625,6 +3041,15 @@ h4.pricing-from {
 .footer-social-icon ul li a:hover {
     background: #043E55;
     color: #fff;
+}
+.footer-widget-title-left {
+    margin-right: 0;
+}
+
+.footer-section .row {
+    display: flex; /* Asegura que las columnas estén alineadas en fila */
+    justify-content: space-between; /* Espacio entre las columnas */
+    flex-wrap: nowrap; /* Evita que las columnas se muevan a otra fila */
 }
 
 .footer-widget-title h3 {
@@ -2843,6 +3268,19 @@ h4.pricing-from {
     padding: 13px 50px;
     border: 0;
     font-family: "Jost";
+}
+
+.map-container {
+    background: #003d56;
+    display: flex; /* Habilita el modelo flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (si se aplica altura fija) */
+    margin: 20px 0; /* Opcional: añade espacio arriba y abajo */
+}
+
+iframe {
+    max-width: 100%; /* Ajusta el tamaño para pantallas pequeñas */
+    height: 500px; /* Define una altura fija */
 }
 
 /*<!-- ============================================================== -->
@@ -3139,37 +3577,55 @@ h4.pricing-from {
 }
 
 .services-details-content h2 {
-    font-size: 30px;
-    color: #0a0a0a;
+    font-size: 50px;
+    color: #012f4c6a;
     font-weight: 600;
     font-family: "Jost";
-    margin: 50px 0 22px;
+    margin-bottom: 50px;
+    
     
 }
-.Guaranteed{
-    font-size: 20px;
-    color: #0a0a0a;
-    font-weight: 600;
-    font-family: "Jost";
-    margin: 30px 0 50px;
-    
-} 
-.quality{
-    font-size: 20px;
-    color: #0a0a0a;
-    font-weight: 600;
-    font-family: "Jost";
-    margin: 30px 0 50px;
-    
-} 
-.support{
-    font-size: 20px;
-    color: #0a0a0a;
-    font-weight: 600;
-    font-family: "Jost";
-    margin: 30px 0 50px;
 
+.services-details-content h2:hover {
+    background-color: #033649;
+    color: #ffffff;
+}
+.Guaranteed{
+    font-size: 40px;
+    color: #0a0a0a4e;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 30px 0 50px;
+    
 } 
+.Guaranteed:hover{
+    background-color: #033649;
+    color: #ffffff;
+
+}
+
+.quality{
+    font-size: 40px;
+    color: #0a0a0a4e;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 30px 0 50px;
+} 
+.quality:hover{
+    background-color: #033649;
+    color: #ffffff;
+}
+.support{
+    font-size: 40px;
+    color: #0a0a0a4e;
+    font-weight: 600;
+    font-family: "Jost";
+    margin: 30px 0 50px;
+} 
+.support:hover{
+    background-color: #033649;
+    color: #ffffff;
+}
 .services-details-containers {
     margin-right: 100px; /* Margen derecho del contenedor */
     flex-direction: row-reverse;
@@ -3189,7 +3645,7 @@ h4.pricing-from {
     margin-top: 100px;
 }
     .services-details-content p {
-        font-size: 17px;
+        font-size: 22px;
         line-height: 27px;
         color: #7a8287;
         font-weight: 400;
@@ -3197,7 +3653,10 @@ h4.pricing-from {
         margin: auto;
         margin-bottom: 20px; 
     }
-    
+    .services-details-content p:hover{
+        background-color: #36b1de;
+        color: #ffffff;
+    }
     p.description {
         padding-top: 25px;
     }
@@ -3220,14 +3679,6 @@ h4.pricing-from {
         font-weight: 400;
         margin: auto;
     }
-
-
-
-
- 
-
-
-
 
 .author-comment-box {
     background: #f5f5f5;
@@ -3605,10 +4056,6 @@ a.active i {
 /*<!-- =============================================== -->
 <!-- End it solution service-details Section  -->
 <!-- ================================================ -->*/
-
-
-
-
 
 
 
@@ -4653,14 +5100,76 @@ div#particles .slider-thumb {
 }
 
 
+@media (min-width: 768px) {
+    .col-lg-6 {
+        width: 48%;
+    }
+
+    .col-md-6 {
+        width: 48%;
+    }
+}
 
 
+/* Estilos específicos para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    .col-lg-6, .col-md-6 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
+    .container {
+        padding: 10px;
+    }
 
+    .footer-widget-content h3{
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom:0px ;
+    }
+    
+    .footer-section img {
+        width: 50%;
+    
+}
+    .footer-widget-content {
+    width: 50%;
 
+}
+.footer-widget-title h3{
+    font-size: 4px;
+}
+}
 
+/* Estilos para pantallas medianas */
+@media (min-width: 1024px) {
+    .col-lg-4 {
+        width: 33.33%; /* 3 columnas en pantallas grandes */
+    }
+}
 
+/* Para pantallas medianas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .col-lg-4, .col-md-6 {
+        width: 50%; /* 2 columnas en pantallas medianas */
+    }
+}
 
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .col-lg-4, .col-md-6 {
+        width: 100%; /* 1 columna en pantallas pequeñas */
+    }
+}
+
+/* General para alinear elementos */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Para que las columnas se ajusten bien */
+}
 
 
 

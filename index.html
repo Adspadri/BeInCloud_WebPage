@@ -46,6 +46,8 @@
 
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<script src="assets/js/translate.js"></script>
+	<script src="assets/js/ajax-mail.js"></script>
+
 
 	
 	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
@@ -88,7 +90,7 @@
 	<!--==================================================-->
 
 	<div id="sticky-header" class="it-solution_nav_manu">
-		<div class="container">
+		<div class="container-l">
 			<div class="row align-items-center">
 				<div class="col-lg-2">
 					<div class="logo">
@@ -104,47 +106,28 @@
 				<div class="col-lg-10">
 					<nav class="it-solution_menu">
 						<ul class="nav_scroll">
-							<li class="up"><a href="index.html">Home <span><i class="fas fa-plus"></i></span></a></li>
+							<li class="up"><a href="index.html">Home </a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
 									
-									<!--<li><a href="services.html">Services</a></li>-->
-									<li><a href="services-details.html">Services Details</a></li>
+									
+									<li><a href="service-tree.html">Services Details</a></li>
 								</ul>
 							</li>
-							<!--<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
+							
+							<!-- 
+							<li><a href="blog.html">Blog <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="portfolio-details.html">Portfolio Details</a></li>
+									<li><a href="blog-list.html">Blog List</a></li>
 								</ul>
 							</li>-->
 							
-							<li><a href="blog.html">Blog <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog-list.html">Blog List</a></li>
-									<li><a href="blog-2column.html">Blog 2Column</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<!--<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="about.html">About</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="services-details.html">Services Details</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="testimonial.html">Testimonial</a></li>
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="pricing.html">pricing</a></li>
-									<li><a href="contact-us.html">Contact Us</a></li>
-								</ul>
-							</li>-->
 							<li><a href="contact-us.html">Contact Us</a></li>
 							
 						</ul>
 						
-						<!-- headerm search button BeInCloud168907-->
+						<!-- headerm search button BeInCloud168907
 						 
 						<div class="header-button">
 							<div class="header-src-btn">
@@ -152,7 +135,7 @@
 									
 									<i class="fas fa-search"></i></div>
 							</div>
-						</div>
+						</div>-->
 						
 						<div class="language-switch">
 							 <button onclick="changeLanguage('en')">English</button>
@@ -160,8 +143,6 @@
 						<div class="language-switch">
 							<button onclick="changeLanguage('es')">Español</button>
 						</div>
-
-
 						
 						<!-- headerm light button -->
 						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
@@ -182,7 +163,7 @@
 					<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
 						<ul class="sub-menu">
 							<li><a href="services.html">Services</a></li>
-							<li><a href="services-details.html">Services Details</a></li>
+							<li><a href="service-tree.html">Services Details</a></li>
 						</ul>
 					</li>
 					<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
@@ -203,11 +184,7 @@
 						<ul class="sub-menu">
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services</a></li>
-							<li><a href="services-details.html">Services Details</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="testimonial.html">Testimonial</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="pricing.html">pricing</a></li>
+							<li><a href="service-tree.html">Services Details</a></li>
 							<li><a href="contact-us.html">Contact Us</a></li>
 						</ul>
 					</li>
@@ -229,12 +206,6 @@
 	<!--==================================================-->
 	<!-- Start it solution Hero Section  -->
 	<!--==================================================-->
-
-	<!-- <div class="clearfix" style="clear: both;"></div>
-	<div id="particles" style="background-image: url(assets/images/slider/bg.jpg);
-		background-repeat: no-repeat;background-size: cover;background-position: center center;">
-		<div id="webcoderskull">
-			<div id="home" class="hero-section"> -->
 				
 				<div class="hero-section d-flex align-items-center">
 					<video muted autoplay loop>
@@ -250,14 +221,7 @@
 									<h1 data-translate="business">To help your business reach the next <span data-translate="level"> Level </span></h1>
 									<p data-translate="consulting">From web development to cloud consulting, 
 										we’re here to optimize your performance and reduce costs </p>
-									<!--<div class="hero-button">
-										<div class="section-button">
-											<a href="#">Start Now</a>
-										</div>
-										<div class="section-button up">
-											<a href="#">Contact Us</a>
-										</div>
-									</div>-->
+									
 								</div>
 							</div>
 							<div class="col-lg-5" data-tilt>
@@ -272,10 +236,7 @@
 				
 	
 		
-			<!-- </div>
-		</div>
-	</div>
-	<div class="clearfix" style="clear: both;"></div> -->
+			
 
 	<!--==================================================-->
 	<!-- End it solution Hero Section  -->
@@ -355,14 +316,15 @@
 					<div class="section-title">
 						<h5 data-translate="historyand">History and Values</h5>
 						<h1 data-translate="about">About Us</h1>
-						<p data-translate="fundation">Founded in 2018, BeInCloud was born with the goal of leading technological innovation. Our mission is to offer customized tech solutions that maximize efficiency and reduce costs.</p>
+						<p data-translate="fundation">Founded in 2021, BeInCloud was born 
+							with the goal of leading technological innovation. 
+							Our mission is to offer customized tech solutions that maximize 
+							efficiency and reduce costs.</p>
 					</div>
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="info-item" data-cues="slideInUp">
-								<!--<div class="info-icon">
-									<i class="bi bi-controller"></i>
-								</div>-->
+								
 								<div class="info-content">
 									<h4 data-translate="tailored">Tailored Solutions</h4>
 									<p data-translate="customized">We offer customized technological solutions
@@ -372,9 +334,7 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="info-item" data-cues="slideInUp">
-								<!--<div class="info-icon">
-									<i class="bi bi-controller"></i>
-								</div>-->
+								
 								<div class="info-content">
 									<h4 data-translate="commitment">Commitment to Innovation</h4>
 									<p data-translate="exploring">We stay ahead of the curve by constantly 
@@ -403,9 +363,9 @@
 	<!--==================================================-->
 
 	<div class="service-section">
-		<div class="container">
+		<div class="container-w">
 			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-8">
+				<div class="col-lg-3">
 					<div class="section-title">
 						<h5 data-translate="ourservice">OUR SERVICES</h5>
 						<h1 data-translate="weoffer">We Offer all Types of IT</h1>
@@ -430,7 +390,7 @@
 							<p data-translate="tailormade">Implementation of cloud solutions to enhance the 
 								efficiency and scalability of infrastructure. </p>
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree.html#cloud-solutions" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>			
 					</div>
@@ -447,7 +407,7 @@
 								logistics tracking and management.</p>
 								
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree.html#mobile-service" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -462,12 +422,14 @@
 							<p data-translate="technologyadvisor">Strategies to optimize cloud costs through advanced financial practices.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree.html#finops" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			
 			<div class="row" data-cues="slideInUp" data-duration="2000">
 				<div class="col-lg-4 col-md-6">
 					<div class="single-service-box">
@@ -480,7 +442,7 @@
 								reduce manual tasks across various business areas.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-second.html#processdigitalizacion" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>			
 					</div>
@@ -496,7 +458,7 @@
 								commercialization of products.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-second.html#webplataform" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -512,7 +474,7 @@
 								 enhancing user experience with real-time interactive information.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-second.html#aument-reality" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -529,7 +491,7 @@
 							<p data-translate="endtoend">Development of virtual training platforms for employee education.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-third.html#training-plataform" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>			
 					</div>
@@ -545,7 +507,7 @@
 								storage and anticipate demand.</p>
 
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-third.html#artificial-intelligence" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -559,7 +521,7 @@
 							<h4 data-translate="scaledagility">AUTOMATION</h4>
 							<p data-translate="agileframeworks">Optimization of quality processes through automation.</p>
 							<div class="service-button">
-								<a href="services-details.html" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
+								<a href="service-tree-third.html#automation" data-translate="readmore">Read More <i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -571,68 +533,6 @@
 	<!--==================================================-->
 	<!-- End it solution service Section  -->
 	<!--==================================================-->
-
-
-	<!--==================================================-->
-	<!-- Start it solution brand Section  -->
-	<!--==================================================-->
-
-	<div class="brand-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title center-title">
-						<h2 data-translate="someofourclients">Some of Our Clients</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="brand-list owl-carousel">
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb1.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb2.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb3.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb4.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--==================================================-->
-	<!-- End it solution brand Section  -->
-	<!--==================================================-->
-
-
 
 	<!--==================================================-->
 	<!-- Start it solution choose us Section  -->
@@ -650,7 +550,9 @@
 					<div class="section-title">
 						<h5 data-translate="whychoose">WHY CHOOSE US</h5>
 						<h1 data-translate="whyclients">Why Clients Choose Us</h1>
-						<p data-translate="weareacompany">We are a company of creative technologists, specialized in innovation and digital transformation, with a focus on personalized solutions and professional services.</p>
+						<p data-translate="weareacompany">We are a company of creative technologists, 
+							specialized in innovation and digital transformation,
+							 with a focus on personalized solutions and professional services.</p>
 					</div>
 					<div class="row">
 						<div class="col-lg-6">
@@ -660,7 +562,8 @@
 								</div>
 								<div class="info-content">
 									<h4 data-translate="tailoredsolutions">Tailored Solutions</h4>
-									<p data-translate="weoffercustomized">We offer customized technological solutions that address your specific challenges and goals</p>
+									<p data-translate="weoffercustomized">We offer customized technological 
+										solutions that address your specific challenges and goals</p>
 								</div>
 							</div>
 						</div>
@@ -671,7 +574,8 @@
 								</div>
 								<div class="info-content">
 									<h4 data-translate="commitmenttoinnovation">Commitment to Innovation</h4>
-									<p data-translate="westayahead">We stay ahead of the curve by constantly exploring and integrating the latest technologies.</p>
+									<p data-translate="westayahead">We stay ahead of the curve by constantly 
+										exploring and integrating the latest technologies.</p>
 								</div>
 							</div>
 						</div>
@@ -708,253 +612,14 @@
 		</div>
 	</div>
 
-	<!--==================================================-->
-	<!-- End it solution choose us Section  -->
-	<!--==================================================-->
-
-	
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution project Section  -->
-	<!--==================================================-->
-
-	<!-- <div class="project-section">
-		<div  class="container">
-			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-6">
-					<div class="section-title">
-						<h5>CASE STUDIES</h5>
-						<h1>Our Outstanding Solutions</h1>
-						<h1>For our <span>Customers!</span></h1>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="case_study_nav" data-cues="slideInUp">
-						<div class="case_study_menu">
-							<ul class="menu-filtering">
-								<li data-filter="*" class="current_menu_item">See All</li>
-								<li data-filter=".stregy">Mobile App</li>
-								<li data-filter=".ficulties">Data Analaysis</li>
-								<li data-filter=".coaching">Cloud Hosting</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			row2 
-			<div class="row image_load">
-				<div class="col-lg-4 col-sm-6 grid-item stregy">
-					<div class="case-study-single-box">
-						<div class="case-study-box-inner">
-							<div class="case-study-thumb"><img src="assets/images/resource/poject-thumb.png" alt=""></div>
-							<div class="single_case_study_icon">
-								<a class="venobox vbox-item" data-gall="case-study-thumb" href="assets/images/resource/poject-thumb.png"><i class="bi bi-arrow-right"></i></a>
-							</div>
-							<div class="case-study-content">
-								<div class="case-study-content-inner">
-									<div class="case-study-title">
-										<h3><a href="portfolio-details.html">Data Analaysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 grid-item stregy ficulties coaching">
-					<div class="case-study-single-box" data-cues="slideInUp">
-						<div class="case-study-box-inner">
-							<div class="case-study-thumb"><img src="assets/images/resource/project-thumb1.png" alt=""></div>
-							<div class="single_case_study_icon">
-								<a class="venobox vbox-item" data-gall="case-study-thumb" href="assets/images/resource/project-thumb1.png"><i class="bi bi-arrow-right"></i></a>
-							</div>
-							<div class="case-study-content">
-								<div class="case-study-content-inner">
-									<div class="case-study-title">
-										<h3><a href="portfolio-details.html">Data Analaysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>							
-				</div>
-				<div class="col-lg-4 col-sm-6 grid-item ficulties">
-					<div class="case-study-single-box" data-cues="slideInUp">
-						<div class="case-study-box-inner">
-							<div class="case-study-thumb"><img src="assets/images/resource/project-thumb3.png" alt=""></div>
-							<div class="single_case_study_icon">
-								<a class="venobox vbox-item" data-gall="case-study-thumb" href="assets/images/resource/project-thumb3.png"><i class="bi bi-arrow-right"></i></a>
-							</div>
-							<div class="case-study-content">
-								<div class="case-study-content-inner">
-									<div class="case-study-title">
-										<h3><a href="portfolio-details.html">Data Analaysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 grid-item coaching">
-					<div class="case-study-single-box" data-cues="slideInUp">
-						<div class="case-study-box-inner">
-							<div class="case-study-thumb"><img src="assets/images/resource/project-thumb5.png" alt=""></div>
-							<div class="single_case_study_icon">
-								<a class="venobox vbox-item" data-gall="case-study-thumb" href="assets/images/resource/project-thumb5.png"><i class="bi bi-arrow-right"></i></a>
-							</div>
-							<div class="case-study-content">
-								<div class="case-study-content-inner">
-									<div class="case-study-title">
-										<h3><a href="portfolio-details.html">Data Analaysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 grid-item ficulties stregy">
-					<div class="case-study-single-box" data-cues="slideInUp">
-						<div class="case-study-box-inner">
-							<div class="case-study-thumb"><img src="assets/images/resource/project-thumb4.png" alt=""></div>
-							<div class="single_case_study_icon">
-								<a class="venobox vbox-item" data-gall="case-study-thumb" href="assets/images/resource/project-thumb4.png"><i class="bi bi-arrow-right"></i></a>
-							</div>
-							<div class="case-study-content">
-								<div class="case-study-content-inner">
-									<div class="case-study-title">
-										<h3><a href="portfolio-details.html">Data Analaysis</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	</div> // -->
-
-	<!--==================================================-->
-	<!-- End it solution project Section  -->
-	<!--==================================================-->
-
 
 	<!--==================================================-->
 	<!-- Start it solution counter Section  -->
 	<!--==================================================-->
 	<div class="brand-section">
 		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title center-title">
-						<h2 data-translate="someofourpartners">Some of Our Partners</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="brand-list owl-carousel">
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb1.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb2.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb3.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb4.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
-
-    <!-- <div class="counter-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-3 col-md-6">
-					<div class="single-counter-box">
-						<div class="counter-icon">
-							<img src="assets/images/resource/counter-icon.png" alt="icon">
-						</div>
-						<div class="counter-text">
-							<h1 class="counter">650</h1>
-							<span>+</span>
-							<h5>Complete Projects</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-counter-box">
-						<div class="counter-icon">
-							<img src="assets/images/resource/counter-icon1.png" alt="icon">
-						</div>
-						<div class="counter-text">
-							<h1 class="counter">25</h1>
-							<span>+</span>
-							<h5>Winning Awards</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-counter-box">
-						<div class="counter-icon">
-							<img src="assets/images/resource/counter-icon2.png" alt="icon">
-						</div>
-						<div class="counter-text">
-							<h1 class="counter">260</h1>
-							<span>+</span>
-							<h5>Saticfied Custimer</h5>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single-counter-box">
-						<div class="counter-icon">
-							<img src="assets/images/resource/counter-icon3.png" alt="icon">
-						</div>
-						<div class="counter-text">
-							<h1 class="counter">28</h1>
-							<span>+</span>
-							<h5>Experience Team</h5>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-
-	<!--==================================================-->
-	<!-- End it solution counter Section  -->
-	<!--==================================================-->
-
- 
-
-
 
 	<!--==================================================-->
 	<!-- Start it solution About Us Section  -->
@@ -1025,449 +690,6 @@
 	<!--==================================================-->
 
 
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution brand Section  -->
-	<!--==================================================
-
-	<div class="brand-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title center-title">
-						<h2>IT Perch by 1000's of Clients Across The Globe</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="brand-list owl-carousel">
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb1.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb2.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb3.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb4.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--==================================================-->
-	<!-- End it solution brand Section  -->
-	<!--==================================================-->
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution testimonial Section  -->
-	<!--==================================================
-
-	<div class="testimonial-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title up center-title">
-						<h5>TESTIMONIAL</h5>
-						<h1>Our Customer Feedback</h1>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="testi-list owl-carousel">
-					<div class="col-lg-12">						
-						<div class="single-testi-box">
-							<div class="testi-desc">
-								<p>This is one the have ever worked with extra bells and whistles added are amazing
-									The customer support is very responsive and amazing.</p>
-							</div>
-							<div class="testi-img">
-								<img src="assets/images/resource/testi-thumb.png" alt="thumb">
-							</div>
-							<div class="testi-content">
-								<h4>Victoria Porter</h4>
-								<p>Founder of Luminous</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12">						
-						<div class="single-testi-box">
-							<div class="testi-desc">
-								<p>This is one the have ever worked with extra bells and whistles added are amazing
-									The customer support is very responsive and amazing.</p>
-							</div>
-							<div class="testi-img">
-								<img src="assets/images/resource/testimonial-img.png" alt="thumb">
-							</div>
-							<div class="testi-content">
-								<h4> James Jeffersons </h4>
-								<p>Founder of Luminous</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--==================================================-->
-	<!-- End it solution testimonial Section  -->
-	<!--==================================================-->
-
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution pricing Section  -->
-	<!--
-
-	<div class="pricing-section">
-		<div class="container">
-			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h5>PRICING PLAN</h5>
-						<h1>We’ve Offered The Best</h1>
-						<h1><span>Pricing</span> For You</h1>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="pricing-tab-button">
-						<ul>
-							<li><button class="active">Monthly</button></li>
-							<li><button>yearly</button></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="tab-content active">
-				<div class="row" data-cues="slideInUp" data-duration="2000">
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3">
-							<h3 class="pricing-plan2">Starter Plan</h3>						
-							<h4 class="pricing-from">Save 45%</h4>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$39<span>/ month</span></h2>
-								<h2 class="price price-yearly">$76<span>/ yearly</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>																								
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-btn">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>
-	
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3 up">
-							<h3 class="pricing-plan2">Business Plan</h3>
-							<div class="Popular-img"><img src="assets/images/resource/pricing-img.png" alt=""></div>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$49<span> / month</span></h2>
-								<h2 class="price price-yearly">$98<span> / yearly</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>																								
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-button">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>	
-	
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3">
-							<h3 class="pricing-plan2"> Premium Plan</h3>						
-							<h4 class="pricing-from">Save 45%</h4>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$59<span> / month</span></h2>
-								<h2 class="price price-yearly">$118<span> / yearly</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>																						
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-btn">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="tab-content">
-				<div class="row" data-cues="slideInUp" data-duration="2000">
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3">
-							<h3 class="pricing-plan2">Starter Plan</h3>						
-							<h4 class="pricing-from">Save 45%</h4>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$78<span> / yearly</span></h2>
-								<h2 class="price price-yearly">$45<span> / Monthly</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>		
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-btn">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>
-	
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3 up">
-							<h3 class="pricing-plan2">Business Plan</h3>
-							
-							<div class="Popular-img"><img src="assets/images/resource/pricing-img.png" alt=""></div>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$98<span> / yearly</span></h2>
-								<h2 class="price price-yearly">$98<span> / month</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>																									
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-button">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>	
-	
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-single-items style_one style_3">
-							<h3 class="pricing-plan2"> Premium Plan</h3>						
-							<h4 class="pricing-from">Save 45%</h4>
-							<div class="pricing-plan">
-								<h2 class="price price-monthly">$118<span> / yearly</span></h2>
-								<h2 class="price price-yearly">$418<span> / Monthly</span></h2>
-							</div>												
-							<div class="pricing-body">
-								<div class="pricing-feature">
-									<ul>
-										<li><i class="bi bi-check-lg"></i> 10 GB SSD Storage</li>																								
-										<li><i class="bi bi-check-lg"></i> 10 MySQL Database</li>																								
-										<li><i class="bi bi-check-lg"></i> Unlimited Website</li>																								
-										<li><i class="bi bi-check-lg"></i> cPanel Control Panel</li>																								
-										<li class="up"><span><i class="bi bi-x-lg"></i> Auto Backup & Cloud Storage</span></li>																								
-										<li  class="up"><span><i class="bi bi-x-lg"></i> Content Optimization</span></li>																								
-										<li class="upper"><i class="bi bi-check-lg"></i> <span>Expand Feature</span></li>																							
-									</ul>
-								</div>
-							</div>
-							<div class="pricing-btn">
-								<a href="pricing.html">Choose Plan</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	==================================================-->
-	<!-- End it solution pricing Section  -->
-	<!--==================================================-->
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution blog Section  -->
-	<!--==================================================
-
-	<div class="blog-section">
-		<div class="container">
-			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h5>RECENT NEWS</h5>
-						<h1>Trending IT Solution</h1>
-						<h1><span>Article</span> & Tips</h1>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="blog-button">
-						<a href="#">See All Stories <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb">
-							<img src="assets/images/resource/blog-thumb.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">Cloud Hosting</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 21, 2023</span></p>
-								<a href="blog-details.html">Chosing the Right Web Hosting
-									Control Pane...</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Alex Collin</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb up">
-							<img src="assets/images/resource/blog-thumb1.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">Web Hosting</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 25, 2023</span></p>
-								<a href="blog-details.html">How the Ecosystem Approach
-									Empowers Startups...</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Julia Moris</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb upper">
-							<img src="assets/images/resource/blog-thumb2.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">VPS Server</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 29, 2023</span></p>
-								<a href="blog-details.html">Simple Ways To Optimize Your
-									Website For SEO…</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Amantha</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--==================================================-->
-	<!-- End it solution blog Section  -->
-	<!--==================================================-->
-
-
-
-	
-
 	<!--==================================================-->
 	<!-- Start it solution footer Section  -->
 	<!--==================================================-->
@@ -1475,86 +697,44 @@
 	<div class="footer-section">
 		<div class="container">
 			<div class="row">
+				<!-- Primera columna: Logo -->
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-logo">
-						 <a href="#"><img src="assets/images/resource/Logo BeInCloud blanco.png" alt="bg"></a>
+						<a href="#"><img src="assets/images/resource/Logo BeInCloud blanco.png" alt="Logo BeInCloud"></a>
 					</div>
 					<div class="footer-widget-description">
 						<p>"Shaping the future of business through digital innovation."</p>
 					</div>
-					<div class="footer-social-icon">
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="bi bi-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="bi bi-youtube"></i></a></li>
-						</ul>
+				</div>
+	
+				<!-- Segunda columna: Imagen -->
+				
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-widget-title-left">
+						<h3>Official info</h3>
+					</div>
+					<div class="icon-box-content">
+						<p>Send us Email</p>
+						<h4>info@beincloud.net</h4>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-6">
-					<div class="footer-widget-content">
-						<div class="footer-widget-title">
-							<h3>Help Links</h3>
-						</div>
-						<div class="footer-widget-menu">
-							<ul>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Customers Services</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> IT Department</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> About Our Company</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Business Growth</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Make An Appointment</a></li>
-							</ul>
-						</div>
+	
+				<!-- Tercera columna: Información de contacto -->
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-logo">
+						<a href="#"><img src="assets/images/resource/Untitled design - 4.png" alt="Untitled Design"></a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-widget-content">
-						<div class="footer-widget-title-left">
-							<h3>Official info</h3>
-						</div>
-						<div class="icon-box">
-							<div class="widget-icon-box">
-								
-							</div>
-							
-						</div>
-						<div class="icon-box">
-							<div class="widget-icon-box">
-								<div class="widget-icon">
-									<i class="bi bi-chat-dots"></i>
-								</div>
-							</div>
-							<div class="icon-box-content">
-								<p>Send us Email</p>
-								<h4>info@beincloud.net</h4>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-widget-content">
-						
+				
 		
-							<div class="footer-logo">
-								<a href="#"><img src="assets/images/resource/Untitled design - 4.png" alt="bg"></a>
-						   </div>
-						
-						 
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
-
+	
 
 	<!--==================================================-->
 	<!-- End it solution footer Section  -->
 	<!--==================================================-->
-
-
-
-
 
 	<!--==================================================-->
 	<!-- Start it solution copyright Section  --> 
@@ -1576,9 +756,6 @@
 	<!-- Start it solution copyright Section  -->
 	<!--==================================================-->
 
-
-
-
 	<!--==================================================-->
 	<!-- Start scrollup section Section -->
 	<!--==================================================-->
@@ -1591,11 +768,6 @@
 	<!-- Start scrollup section Section -->
 	<!--==================================================-->
 
-
- 
-
- 
-	
 	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
 
 	<script src="assets/js/popper.min.js"></script>

@@ -39,13 +39,16 @@
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="assets/js/translate.js"></script>
+	<script src="assets/js/ajax-mail.js"></script>
 	<!-- dark lite css -->
 	<link rel="stylesheet" href="assets/css/dark-lite.css" type="text/css">
 
 	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
 
 	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
-                
+
+	
                 
 </head>
 
@@ -65,33 +68,13 @@
 	<!--==================================================-->
 	<div class="curser"></div>
 	<div class="curser2"></div>
-	<!--==================================================-->
-	<!-- Ends Curser Section Here -->
-	<!--==================================================
-	<form method="get" action="/search">
-		<div class="form-group">
-			<input type="search" name="search-field" placeholder="Search Here" required>
-			<button type="submit"><i class="fas fa-search"></i></button>
-		</div>
-	</form>-->
-	<form method="POST" action="https://formspree.io/f/xkgnnewk">
+	
+	<form id="dreamit-form" action="https://formspree.io/f/[FORM_ID]" method="POST" data-no-redirect>
     <div class="form-group">
     </div>
 </form>
 
-	<!--==================================================-->
-	<!-- Start Search Popup Area -->
-	<!--==================================================
-	<div class="search-popup">
-		<button class="close-search style-two"><i class="fas fa-times"></i></button>
-		<form method="post" action="#">
-			<div class="form-group">
-				<input type="search" name="search-field" value="" 
-				placeholder="Search Here" required="">
-				<button type="submit"><i class="fas fa-search"></i></button>
-			</div>
-		</form>
-	</div>
+	
 	<!--==================================================-->
 	<!-- End Search Popup Area -->
 	<!--==================================================-->
@@ -127,41 +110,24 @@
 									<li><a href="services-details.html">Services Details</a></li>
 								</ul>
 							</li>
-							<!--<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>-->
+							<!--
 							<li><a href="blog.html">Blog <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
 									<li><a href="blog.html">Blog</a></li>
 									<li><a href="blog-list.html">Blog List</a></li>
-									<li><a href="blog-2column.html">Blog 2Column</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<!--<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="about.html">About</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="services-details.html">Services Details</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="testimonial.html">Testimonial</a></li>
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="pricing.html">pricing</a></li>
-									<li><a href="contact-us.html">Contace Us</a></li>
+								
 								</ul>
 							</li>-->
+							
 							<li><a href="contact-us.html">Contact Us</a></li>
 						</ul>
-						<!-- headerm search button -->
+						<!-- headerm search button 
 						<div class="header-button">
 							<div class="header-src-btn">
 								<div class="search-box-btn search-box-outer style-two"><i class="fas fa-search"></i></div>
 							</div>
 							 
-						</div>
+						</div>-->
 						<!-- headerm light button -->
 						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
 					</nav>
@@ -188,24 +154,19 @@
 							<li><a href="portfolio.html">Portfolio</a></li>
 							<li><a href="portfolio-details.html">Portfolio Details</a></li>
 						</ul>
-					</li>-->
+					</li>
 					<li><a href="index.html">Blog <span><i class="fas fa-plus"></i></span></a>
 						<ul class="sub-menu">
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="blog-list.html">Blog List</a></li>
-							<li><a href="blog-2column.html">Blog 2Column</a></li>
-							<li><a href="blog-details.html">Blog Details</a></li>
-						</ul>
+	
+						</ul>-->
 					</li>
 					<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
 						<ul class="sub-menu">
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services</a></li>
 							<li><a href="services-details.html">Services Details</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="testimonial.html">Testimonial</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="pricing.html">pricing</a></li>
 							<li><a href="contact-us.html">Contace Us</a></li>
 						</ul>
 					</li>
@@ -259,214 +220,120 @@
 	<!--==================================================-->
 
 	<div class="contact-section">
-		<div class="container">
-			<div class="row project" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12">
-					<div class="contact-form-content text-center">
-						<h1>Get In Touch</h1>
-					</div>
-				</div>
-				<form action=https://formspree.io/f/xkgnnewk method="POST">
-					<div class="row">
-						<div class="col-lg-6 col-md-6">
-							<div class="form-box">
-								<input type="text" name="name" placeholder="Your Name" required>
-								<i class="fas fa-user"></i>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="form-box">
-								<input type="text" name="email" placeholder="Email Address" required>
-								<i class="bi bi-chat-dots"></i>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="form-box">
-								<input type="text" name="phone" placeholder="Your Phone" required>
-								<i class="bi bi-telephone-fill"></i>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="form-box">
-								<input type="text" name="subject" placeholder="Subject" required>
-								<i class="bi bi-chevron-down"></i>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-6">
-							<div class="form-box">
-								<textarea name="massage" id="massage" placeholder="Write Comment" required></textarea>
-								<i class="bi bi-chat"></i>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-6">
-							<div class="form-box">
-								<button class="submit">Submit</button>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row project" data-cues="slideInUp" data-duration="2000">
+            <div class="col-lg-12">
+                <div class="contact-form-content text-center">
+                    <h1>Get In Touch</h1>
+                </div>
+            </div>
+            <form id="contact-form" action="https://formspree.io/f/xkgnnewk" method="POST">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-box">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-box">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <i class="bi bi-chat-dots"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-box">
+                            <input type="text" name="phone" placeholder="Your Phone" required>
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-box">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="form-box">
+                            <textarea name="message" id="message" placeholder="Write Comment" required></textarea>
+                            <i class="bi bi-chat"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                        <div class="form-box">
+                            <button type="submit" class="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="status-message" style="display: none;"></div>
+        </div>
+    </div>
+</div>
 
 	<!--==================================================-->
 	<!-- End it solution contact-sectidon -->
 	<!--==================================================-->
 
 
-	
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution service-section -->
-	<!--==================================================-->
-
-	<div class="service-area">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-4 col-md-6">
-					<div class="service-box">
-						<div class="service-icon">
-							<i class="bi bi-envelope"></i>
-						</div>
-						<div class="service-title">
-							<h3>Email Address</h3>
-							<p>info@beincloud.net</p>
-							
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
+	<div class="map-container">
+		<iframe 
+			src="https://www.google.com/maps/d/u/0/embed?mid=1sa3BYY-LePqS-LX926U_yLsT_GrOwP0&ehbc=2E312F&noprof=1"
+			width="640" 
+			height="480" 
+			style="border:0;">
+		</iframe>
 	</div>
 
-	<!--==================================================-->
-	<!-- End it solution service-section -->
-	<!--==================================================-->
-
-
-
-
 
 
 	<!--==================================================-->
-	<!-- Start it solution google-map-section -->
-	<!--==================================================
-
-	<div class="google-map-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="google-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.6194043224186!2d89.61168491495718!3d25.650754283687256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fd33c03fbe69cb%3A0x273671e159f8b39e!2sRDRS%20Ulipur!5e0!3m2!1sen!2sbd!4v1636872467628!5m2!1sen!2sbd">
-							
-						</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--==================================================-->
-	<!-- End it solution google-map-section -->
-	<!--==================================================-->
-
-
- 
-
-
- 	<!--==================================================-->
 	<!-- Start it solution footer Section  -->
 	<!--==================================================-->
 
 	<div class="footer-section">
 		<div class="container">
 			<div class="row">
+				<!-- Primera columna: Logo -->
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-logo">
-						 <a href="#"><img src="assets/images/resource/Logo BeInCloud blanco.png" alt="bg"></a>
+						<a href="#"><img src="assets/images/resource/Logo BeInCloud blanco.png" alt="Logo BeInCloud"></a>
 					</div>
 					<div class="footer-widget-description">
 						<p>"Shaping the future of business through digital innovation."</p>
 					</div>
-					<div class="footer-social-icon">
-						<ul>
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="bi bi-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="bi bi-youtube"></i></a></li>
-						</ul>
+				</div>
+	
+				<!-- Segunda columna: Imagen -->
+				
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-widget-title-left">
+						<h3>Official info</h3>
+					</div>
+					<div class="icon-box-content">
+						<p>Send us Email</p>
+						<h4>info@beincloud.net</h4>
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-6">
-					<div class="footer-widget-content">
-						<div class="footer-widget-title">
-							<h3>Help Links</h3>
-						</div>
-						<div class="footer-widget-menu">
-							<ul>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Customers Services</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> IT Department</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> About Our Company</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Business Growth</a></li>
-								<li><a href="#"><i class="bi bi-arrow-right"></i> Make An Appointment</a></li>
-							</ul>
-						</div>
+	
+				<!-- Tercera columna: Información de contacto -->
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-logo">
+						<a href="#"><img src="assets/images/resource/Untitled design - 4.png" alt="Untitled Design"></a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-widget-content">
-						<div class="footer-widget-title-left">
-							<h3>Official info</h3>
-						</div>
-						<div class="icon-box">
-							<div class="widget-icon-box">
-								
-							</div>
-							
-						</div>
-						<div class="icon-box">
-							<div class="widget-icon-box">
-								<div class="widget-icon">
-									<i class="bi bi-chat-dots"></i>
-								</div>
-							</div>
-							<div class="icon-box-content">
-								<p>Send us Email</p>
-								<h4>info@beincloud.net</h4>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-widget-content">
-						
-		
-							<div class="footer-logo">
-								<a href="#"><img src="assets/images/resource/Untitled design - 4.png" alt="bg"></a>
-						   </div>
-						
-						 
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
+	
 
 	<!--==================================================-->
 	<!-- End it solution footer Section  -->
 	<!--==================================================-->
 
- 
-
-
-
-  	<!--==================================================-->
-	<!-- Start it solution copyright Section  -->
+	<!--==================================================-->
+	<!-- Start it solution copyright Section  --> 
 	<!--==================================================-->
 
 	<div class="copyright-section">
@@ -474,7 +341,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="copyright-description text-center">
-						<p>© 2023 IT-Perch – <span>Dream-IT</span>. All rights reserved.</p>
+						<p>© 2024 BeInCloud – <span>BeInCloud</span>. All rights reserved.</p>
 					</div>
 				</div>
 			</div>
@@ -485,23 +352,17 @@
 	<!-- Start it solution copyright Section  -->
 	<!--==================================================-->
 
-
- 
-
 	<!--==================================================-->
 	<!-- Start scrollup section Section -->
 	<!--==================================================-->
-
 	<div class="prgoress_indicator active-progress">
 		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
 		  <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 270.456;"></path>
 		</svg>
 	</div>
-
 	<!--==================================================-->
 	<!-- Start scrollup section Section -->
 	<!--==================================================-->
- 
 
 	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
 
@@ -537,14 +398,15 @@
 
 	<script src="assets/js/dark-lite.js"></script>
 
-	<script src="assets/js/scrollCue.min.js"></script>
-
 	<script src="assets/js/particls.js"></script>
 
-	<script src="assets/js/theme.js"></script>
-	
+	<script src="assets/js/scrollCue.min.js"></script>
 
+	<script src="assets/js/theme.js"></script>
 
 </body>
 
 </html>
+
+
+

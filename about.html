@@ -10,6 +10,7 @@
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/icon.png">
 	<!-- bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
 	<!-- carousel CSS -->
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all">
@@ -41,9 +42,15 @@
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<!-- dark lite css -->
 	<link rel="stylesheet" href="assets/css/dark-lite.css" type="text/css">
-	
+
 	<link rel="stylesheet" href="assets/css/scrollCue.css" type="text/css">
 
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="assets/js/translate.js"></script>
+	<script src="assets/js/ajax-mail.js"></script>
+	
+
+	
 	<link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet">
                 
                 
@@ -102,58 +109,55 @@
 						<a class="logo_img" href="index.html" title="it-solution">
 							<img src="assets/images/resource/Logo BeInCloud blanco.png" alt="logo">
 						</a>
+						
 						<a class="main_sticky" href="index.html" title="it-solution">
 							<img src="assets/images/LogoBIC.png" alt="logo">
 						</a>
 					</div>
 				</div>
 				<div class="col-lg-10">
-					<nav class="it-solution_menu style-two">
+					<nav class="it-solution_menu">
 						<ul class="nav_scroll">
-							<li class="up"><a href="index.html">Home <span><i class="fas fa-plus"></i></span></a></li>
+							<li class="up"><a href="index.html">Home </a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
-									<!--<li><a href="services.html">Services</a></li>-->
-									<li><a href="services-details.html">Services Details</a></li>
+									
+									
+									<li><a href="service-tree.html">Services Details</a></li>
 								</ul>
 							</li>
-							<!--<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
+							<!-- 
+							
+							<li><a href="blog.html">Blog <span><i class="fas fa-plus"></i></span></a>
 								<ul class="sub-menu">
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="portfolio-details.html">Portfolio Details</a></li>
-								</ul>
-							</li>-->
-							<li><a href="index.html">Blog <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="blog.html">Blog</a></li>
 									<li><a href="blog-list.html">Blog List</a></li>
-									<li><a href="blog-2column.html">Blog 2Column</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
 								</ul>
 							</li>
-							<!--<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
-								<ul class="sub-menu">
-									<li><a href="about.html">About</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="services-details.html">Services Details</a></li>
-									<li><a href="team.html">Team</a></li>
-									<li><a href="testimonial.html">Testimonial</a></li>
-									<li><a href="portfolio.html">Portfolio</a></li>
-									<li><a href="pricing.html">pricing</a></li>
-									<li><a href="contact-us.html">Contace Us</a></li>
-								</ul>
-							</li>-->
+							-->
 							<li><a href="contact-us.html">Contact Us</a></li>
+							
 						</ul>
-						<!-- headerm search button -->
+						
+						<!-- headerm search button BeInCloud168907
+						 
 						<div class="header-button">
 							<div class="header-src-btn">
-								<div class="search-box-btn search-box-outer style-two"><i class="fas fa-search"></i></div>
+								<div class="search-box-btn search-box-outer">
+									
+									<i class="fas fa-search"></i></div>
 							</div>
-							 
+						</div>-->
+						
+						<div class="language-switch">
+							 <button onclick="changeLanguage('en')">English</button>
 						</div>
-						<!-- headerm light button -->
+						<div class="language-switch">
+							<button onclick="changeLanguage('es')">Español</button>
+						</div>
+
+
+						
 						<!-- headerm light button -->
 						<div class="dark-light" onclick="themeToggle()"><span class="bi bi-sun"></span></div>
 					</nav>
@@ -175,30 +179,21 @@
 							<li><a href="services-details.html">Services Details</a></li>
 						</ul>
 					</li>
-					<li><a href="portfolio.html">Portfolio <span><i class="fas fa-plus"></i></span></a>
-						<ul class="sub-menu">
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="portfolio-details.html">Portfolio Details</a></li>
-						</ul>
-					</li>
+				
+					<!-- 
 					<li><a href="index.html">Blog <span><i class="fas fa-plus"></i></span></a>
 						<ul class="sub-menu">
 							<li><a href="blog.html">Blog</a></li>
 							<li><a href="blog-list.html">Blog List</a></li>
-							<li><a href="blog-2column.html">Blog 2Column</a></li>
-							<li><a href="blog-details.html">Blog Details</a></li>
+				
 						</ul>
-					</li>
+					</li>-->
 					<li><a href="index.html">Pages <span><i class="fas fa-plus"></i></span></a>
 						<ul class="sub-menu">
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Services</a></li>
 							<li><a href="services-details.html">Services Details</a></li>
-							<li><a href="team.html">Team</a></li>
-							<li><a href="testimonial.html">Testimonial</a></li>
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="pricing.html">pricing</a></li>
-							<li><a href="contact-us.html">Contace Us</a></li>
+								<li><a href="contact-us.html">Contace Us</a></li>
 						</ul>
 					</li>
 					<li><a href="contact-us.html">Contact Us</a></li>
@@ -211,12 +206,7 @@
 	<!-- End it solution Main Menu  -->
 	<!--==================================================-->
 
-	
 
-
-	<!--==================================================-->
-	<!-- Start it solution breadcumb Section  -->
-	<!--==================================================-->
 
 	<div class="breadcumb-section d-flex align-items-center">
 		<div class="container">
@@ -224,7 +214,7 @@
 				<div class="col-lg-12">
 					<div class="breadcumb-container text-center">
 						<div class="breadcumb-title">
-							<h1>About Us</h1>
+							<h1 data-translate="about">About Us</h1>
 						</div>
 						<ul>
 							<li><a href="index.html"></a></li>
@@ -243,72 +233,32 @@
 	<!--==================================================-->
 
 
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution About Us Section  -->
-	<!--==================================================-->
-
 	<div class="about-us-section">
 		<div class="container">
 			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h5>ABOUT US</h5>
-						<h1>We Are Development Expert</h1>
-						<h1>on all IT <span>Solution</span></h1>
+						<h5 data-translate="about">ABOUT US</h5>
+						<h1 data-translate="wearedevelopmentexpert">We Are Development Expert</h1>
+						<h1 data-translate="onallIT">on all IT <span>Solution</span></h1>
 						<div class="about-text-text">
-						<p> At BeInCloud, we are a team of tech creatives passionate about driving 
-							innovation and digital transformation. With expertise in custom solutions 
-							and professional services, we empower businesses to thrive in the digital 
-							age by embracing cutting-edge technology.</p>
+							<p data-translate="fundationin">Founded in 2021, BeInCloud was born with the goal of 
+								leading technological innovation. At the heart of our mission is 
+								our dedicated team of experts, driven by a shared commitment to deliver 
+								exceptional value to every client we serve.</p>
+
+								<p data-translate="customizedwe">We understand that every business is unique, 
+									which is why we focus on providing tailored technological solutions designed 
+									to address your specific challenges and align with your goals.</p>
 							
-							<p>Our mission is to help companies increase agility, reduce costs,
-							and maximize performance through cloud services, agile methodologies, 
-							and modern web and app development. Whether it's scaling digital platforms, 
-							optimizing workflows, or delivering tailored cloud solutions, we stand by our
-							clients every step of the way, ensuring they stay ahead in a fast-paced, 
-							ever-evolving market.</p>
-							
-							<p>Join us in shaping the future of technology and driving success with flexible, 
-							innovative, and results-driven solutions.</p>
+									<p data-translate="exploringour">Our team combines deep technical expertise with a 
+										passion for innovation, ensuring that we deliver solutions that truly make 
+										a difference.</p>
 						</div>
-                   <!--
-					<div class="about-icon-box">
-						<div class="box-icon">
-							<img src="assets/images/resource/icon.png" alt="icon">
-						</div>
-						<div class="about-text">
-							<h4>Worldwide Services</h4>
-							<p>Progressively foster enter systems whereas equity invested web-readin
-								installed expedite virtual networks.</p>
-						</div>
-					</div>
-					<div class="about-icon-box">
-						<div class="box-icon up">
-							<img src="assets/images/resource/icon1.png" alt="icon">
-						</div>
-						<div class="about-text">
-							<h4>Uniqe Solutions</h4>
-							<p>Progressively foster enter systems whereas equity invested web-readin
-								installed expedite virtual networks.</p>
-						</div>
-					</div>
-					<div class="about-icon-box">
-						<div class="box-icon upper">
-							<img src="assets/images/resource/icon2.png" alt="icon">
-						</div>
-						<div class="about-text">
-							<h4>24/7 Free Online Support</h4>
-							<p>Progressively foster enter systems whereas equity invested web-readin
-								installed expedite virtual networks.</p>
-						</div>
-						-->
+                 
 					</div>
 					<div class="about-us-button">
-						<a href="contact-us.html">Get In Toutch</a>
+						<a href="contact-us.html">Get In Touch</a>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -327,371 +277,45 @@
 	<!--==================================================-->
 	<!-- End it solution About Us Section  -->
 	<!--==================================================-->
-
-
- 
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution Team Section  -->
-	<!--==================================================
-
-	<div class="team-section">
+	<div class="about-us-section-solution">
 		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title center-title">
-						<h5>TEAM MEMBER</h5>
-						<h1>We Are Development Expert</h1>
-						<h1>Team all IT <span>Solution</span></h1>
+			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
+				<div class="col-lg-6">
+					<div class="section-title-aboutus">
+						<h1 data-translate="wearedevelopmentexpert">At BeInCloud</h1>
+						<h1 data-translate="onallIT">we are more than just a technology provider we are your strategic partner. </h1>
+						<p data-translate="atbeincloud">Our approach is rooted in:</p>
+						</div>
+					<div class="about-icon-box">
+						<div class="section-title-aboutus">
+							<h4 data-translate="globalsolutionsc">Cloud Migration and Scalability</h4>
+							<h4 data-translate="innovatetechnologiesp">Process Automation for Operational Efficiency</h4>
+							<h4 data-translate="dedicatedsupportc">Custom Web and Mobile Applications</h4>
+							<h4 data-translate="dedicatedsupporta">AI-Driven Predictive Solutions</h4>
+						</div>
+				<div class="about-text">
+					</div>
+					<div class="about-icon-box">
+						<div class="about-text">
+							</div>
+						<div class="about-text">
+							</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="team-single-box">
-						<div class="team-thumb">
-							<img src="assets/images/resource/team-thumb.png" alt="thumb">
-							<div class="team-icon">
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-share-icon">
-								<i class="fas fa-share-alt"></i>
-							</div>
-						</div>
-						<div class="team-content">
-							<h4><a href="#">Ana D. Lavin</a></h4>
-							<p>Consulting Planning</p>
-						</div>
+					<div class="about-us-button">
+						<a href="contact-us.html" data-translate="getintoutch">Get In Toutch</a>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="team-single-box">
-						<div class="team-thumb">
-							<img src="assets/images/resource/team-thumb1.png" alt="thumb">
-							<div class="team-icon">
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-share-icon">
-								<i class="fas fa-share-alt"></i>
-							</div>
-						</div>
-						<div class="team-content">
-							<h4><a href="#">Angela Graves</a></h4>
-							<p>Consulting Planning</p>
-						</div>
+				<div class="col-lg-6">
+					<div class="about-us-thumb" data-tilt data-cues="slideInUp">
+						<img src="assets/images/finops_finops_hands_hands.png" alt="about-us-thumb">
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="team-single-box">
-						<div class="team-thumb">
-							<img src="assets/images/resource/team-thumb2.png" alt="thumb">
-							<div class="team-icon">
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-share-icon">
-								<i class="fas fa-share-alt"></i>
-							</div>
-						</div>
-						<div class="team-content">
-							<h4><a href="#">MD Shahin Alam</a></h4>
-							<p>Consulting Planning</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="team-single-box">
-						<div class="team-thumb">
-							<img src="assets/images/resource/team-thumb3.png" alt="thumb">
-							<div class="team-icon">
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-								</ul>
-							</div>
-							<div class="team-share-icon">
-								<i class="fas fa-share-alt"></i>
-							</div>
-						</div>
-						<div class="team-content">
-							<h4><a href="#">Rita J. Luna</a></h4>
-							<p>Consulting Planning</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-
-	<!--==================================================-->
-	<!-- End it solution Team Section  -->
-	<!--==================================================-->
-
-
-
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution testimonial Section  -->
-	<!--==================================================
-
-	<div class="testimonial-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title up center-title">
-						<h5>TESTIMONIAL</h5>
-						<h1>Our Customer Feedback</h1>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="testi-list owl-carousel">
-					<div class="col-lg-12">						
-						<div class="single-testi-box">
-							<div class="testi-desc">
-								<p>This is one the have ever worked with extra bells and whistles added are amazing
-									The customer support is very responsive and amazing.</p>
-							</div>
-							<div class="testi-img">
-								<img src="assets/images/resource/testi-thumb.png" alt="thumb">
-							</div>
-							<div class="testi-content">
-								<h4>Victoria Porter</h4>
-								<p>Founder of Luminous</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12">						
-						<div class="single-testi-box">
-							<div class="testi-desc">
-								<p>This is one the have ever worked with extra bells and whistles added are amazing
-									The customer support is very responsive and amazing.</p>
-							</div>
-							<div class="testi-img">
-								<img src="assets/images/resource/testimonial-img.png" alt="thumb">
-							</div>
-							<div class="testi-content">
-								<h4> James Jeffersons </h4>
-								<p>Founder of Luminous</p>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!--==================================================-->
-	<!-- End it solution testimonial Section  -->
-	<!--==================================================-->
-
-
-
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution brand Section  -->
-	<!--==================================================
-
-	<div class="brand-section">
-		<div class="container">
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-12 text-center">
-					<div class="section-title center-title">
-						<h2>IT Perch by 1000's of Clients Across The Globe</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="brand-list owl-carousel">
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb1.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb2.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb3.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="single-brand-box">
-							<div class="brand-thumb">
-								<img src="assets/images/resource/brand-thumb4.png" alt="thumb">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-
-	<!--==================================================-->
-	<!-- End it solution brand Section  -->
-	<!--==================================================-->
-
-
-
-
-
-
-	<!--==================================================-->
-	<!-- Start it solution blog Section  -->
-	<!--==================================================
-
-	<div class="blog-section">
-		<div class="container">
-			<div class="row align-items-center" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-8">
-					<div class="section-title">
-						<h5>RECENT NEWS</h5>
-						<h1>Trending IT Solution</h1>
-						<h1><span>Article</span> & Tips</h1>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="blog-button">
-						<a href="#">See All Stories <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="row" data-cues="slideInUp" data-duration="2000">
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb">
-							<img src="assets/images/resource/blog-thumb.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">Cloud Hosting</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 21, 2023</span></p>
-								<a href="blog-details.html">Chosing the Right Web Hosting
-									Control Pane...</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Alex Collin</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb up">
-							<img src="assets/images/resource/blog-thumb1.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">Web Hosting</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 25, 2023</span></p>
-								<a href="blog-details.html">How the Ecosystem Approach
-									Empowers Startups...</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Julia Moris</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-blog-box">
-						<div class="blog-thumb upper">
-							<img src="assets/images/resource/blog-thumb2.png" alt="thumb">
-							<div class="blog-text">
-								<a href="#">VPS Server</a>
-							</div>
-						</div>
-						<div class="blog-meta-content">
-							<div class="blog-meta-icon">
-								<p><i aria-hidden="true" class="far fa-calendar-alt"></i> <span>August 29, 2023</span></p>
-								<a href="blog-details.html">Simple Ways To Optimize Your
-									Website For SEO…</a>
-							</div>
-							<div class="people-info">
-								<div class="people-icon">
-									<i class="bi bi-person-circle"></i>
-								</div>
-								<div class="people-name">
-									<h5>Amantha</h5>
-								</div>
-								<div class="people-button">
-									<a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>-->
-
-	<!--==================================================-->
-	<!-- End it solution blog Section  -->
-	<!--==================================================-->
-
-
-
-
-
-
-	<!--==================================================-->
+	<!--================================================-->
 	<!-- Start it solution contact-section -->
 	<!--==================================================-->
 
@@ -750,12 +374,6 @@
 	<!-- End it solution contact-sectidon -->
 	<!--==================================================-->
 
-
-
-
-
-
-
  	<!--==================================================-->
 	<!-- Start it solution footer Section  -->
 	<!--==================================================-->
@@ -771,12 +389,14 @@
 						<p>"Shaping the future of business through digital innovation."</p>
 					</div>
 					<div class="footer-social-icon">
+						<!--==================================================
 						<ul>
 							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 							<li><a href="#"><i class="bi bi-instagram"></i></a></li>
 							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 							<li><a href="#"><i class="bi bi-youtube"></i></a></li>
 						</ul>
+						-->
 					</div>
 				</div>
 				<div class="col-lg-2 col-md-6">
