@@ -865,7 +865,7 @@ color: #404245b2;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgba(16, 87, 239, 0.139); /* Fondo semitransparente */
+    background-color: rgb(45, 100, 219); /* Fondo semitransparente */
     padding: 20px;
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgb(249, 248, 248); /* Sombra suave */
@@ -873,8 +873,8 @@ color: #404245b2;
 }
 
 .services-details-containers-digitalization:hover {
-    background-color: rgb(90, 150, 241); /* Cambia solo el color del fondo */
-    box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
+    background-color: rgba(251, 252, 253, 0.92); /* Cambia solo el color del fondo */
+    box-shadow: 0 6px 10px rgb(64, 1, 1); /* Aumenta ligeramente la sombra */
 }
 
 /* Títulos y textos */
@@ -1030,12 +1030,12 @@ color: #404245b2;
 /* Start Service Training Plataforms */
 
 .training-us-section {
-    background-color: #789bf6;
+    background-color: #11399dfd;
     position: relative;
     width: 100%;
     margin-top: 0px;
     padding-top: 10%;
-    padding-bottom: 40%;
+    padding-bottom: 60%;
     height: 10vh; /* Sección ocupa toda la altura del viewport */
     background-image: url(../images/resource/learning\ Kids.webp); /* Ruta de la imagen */
     
@@ -1104,6 +1104,10 @@ color: #404245b2;
     background-color: rgba(237, 148, 123, 0.712); /* Cambia solo el color del fondo */
     box-shadow: 0 6px 10px rgb(0, 0, 0); /* Aumenta ligeramente la sombra */
 }
+
+
+
+
 /* Ends Service Training Plataforms */
 
 /* Start Service Artificial Intelligence (AI) */
